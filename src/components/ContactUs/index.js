@@ -106,7 +106,7 @@ const ContactUs = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                {isSubmitted ? <Result /> : null}
+                                {isSubmitted && !errors ? <Result /> : null}
                             </div>
                         </form>
                     </div>

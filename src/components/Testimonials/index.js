@@ -70,3 +70,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+// this testimonials have the video background but the responsiveness doesn't work

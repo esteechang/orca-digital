@@ -4,13 +4,14 @@ import Img3 from '../../assets/images/svg-4.svg';
 
 export const homeObjOne = {
     id: 'about',
+    locationId:'contact', 
     lightBg: false,
     lightText: true,
     lightTextDescription: true,
     topLine: 'Premium Marketing Services',
-    headline: 'Check us out now  xxxxxx headline here',
+    headline: 'Creating waves for businesses',
     description:
-        'Want to market your product/company? Contact us now! xxx description here',
+        'At Orca, our mission is to combine imaginative with intelligent strategies to give your brand a voice and connect with your clients.',
     buttonLabel: 'Get started',
     imgStart: false, //switch this to true if you want the pic on the left , false to be on right
     img: Img1,

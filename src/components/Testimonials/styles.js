@@ -102,12 +102,27 @@ export const ServicesP = styled.p`
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
+    /* max-width: 1200px;
     position: absolute;
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
+    align-items: center; */
+
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    /* background: #010606; */
+
+    @media screen and (max-width: 768px) {
+        height: 1100px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 1300px;
+    }
 `;
 
 export const HeroContainer = styled.div`
@@ -118,7 +133,7 @@ export const HeroContainer = styled.div`
     padding: 0 30px;
     height: 800px;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 
     /* add :before styles */
     :before {

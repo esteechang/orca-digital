@@ -55,7 +55,7 @@ const Navbar = ({ toggle }) => {
                                     About
                                 </NavLinks>
                             </NavItem>
-                            
+
                             <NavItem>
                                 <NavLinks
                                     to="services"

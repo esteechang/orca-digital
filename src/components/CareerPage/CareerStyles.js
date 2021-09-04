@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ServicesContainer = styled.div`
+export const CareersTopContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -8,16 +8,17 @@ export const ServicesContainer = styled.div`
     align-items: center;
     background: #010606;
 
-    @media screen and (max-width: 768px) {
+    margin-top: 80px;
+    /* @media screen and (max-width: 768px) {
         height: 1100px;
     }
 
     @media screen and (max-width: 480px) {
         height: 1300px;
-    }
+    } */
 `;
 
-export const ServicesWrapper = styled.div`
+export const CareersWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -35,7 +36,7 @@ export const ServicesWrapper = styled.div`
     }
 `;
 
-export const ServicesCard = styled.div`
+export const CareersCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -45,7 +46,8 @@ export const ServicesCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
 
     /* to make the div scrollable for long text */
     overflow-y: scroll;
@@ -58,18 +60,18 @@ export const ServicesCard = styled.div`
     }
 `;
 
-export const ServicesIcon = styled.img`
+export const Img = styled.img`
     height: 200px;
     width: 200px;
     margin-bottom: 10px;
 `;
 
-export const ServicesH2 = styled.h2`
+export const CareerTitle = styled.h2`
     font-size: 1.2rem;
     margin-bottom: 15px;
 `;
 
-export const ServicesP = styled.p`
+export const CareerDescription = styled.p`
     font-size: 1rem;
     text-align: center;
 `;
@@ -79,4 +81,21 @@ export const CareerBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+`;
+
+export const CareersBottomContainer = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #010606;
+    
+    /* @media screen and (max-width: 768px) {
+        height: 1100px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 1300px;
+    } */
 `;

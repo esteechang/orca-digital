@@ -22,7 +22,7 @@ const useForm = (validate) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(errors)
+        console.log(errors);
         // console.log(isEmpty(errors));
 
         setErrors(validate(values));

@@ -111,9 +111,7 @@ export const CareerLink = styled(Link)`
     color: #000000;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    
-    
 `;

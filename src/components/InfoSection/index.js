@@ -30,6 +30,7 @@ const InfoSection = ({
     primary,
     dark,
     dark2,
+    locationId
 }) => {
     return (
         <>
@@ -47,7 +48,7 @@ const InfoSection = ({
                                 </Subtitle>
                                 <BtnWrap>
                                     <Button
-                                        to="home"
+                                        to={locationId ? `${locationId}` : "home"}
                                         smooth={true}
                                         duration={500}
                                         spy={true}
