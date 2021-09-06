@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'PalosecoMedium';
+    src: local('PalosecoMedium'),
+        url('./assets/fonts/Paloseco-Medium.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'PalosecoMedium';
 }
