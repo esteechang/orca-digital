@@ -1,25 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.6d5537b5.chunk.css",
-    "main.js": "/static/js/main.b73c4188.chunk.js",
-    "main.js.map": "/static/js/main.b73c4188.chunk.js.map",
+    "main.js": "/static/js/main.c8b7d1ef.chunk.js",
+    "main.js.map": "/static/js/main.c8b7d1ef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2bf4cb2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2bf4cb2a.js.map",
-    "static/js/2.5735d635.chunk.js": "/static/js/2.5735d635.chunk.js",
-    "static/js/2.5735d635.chunk.js.map": "/static/js/2.5735d635.chunk.js.map",
+    "static/js/2.58dbd7b1.chunk.js": "/static/js/2.58dbd7b1.chunk.js",
+    "static/js/2.58dbd7b1.chunk.js.map": "/static/js/2.58dbd7b1.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.6d5537b5.chunk.css.map": "/static/css/main.6d5537b5.chunk.css.map",
-    "static/js/2.5735d635.chunk.js.LICENSE.txt": "/static/js/2.5735d635.chunk.js.LICENSE.txt",
+    "static/js/2.58dbd7b1.chunk.js.LICENSE.txt": "/static/js/2.58dbd7b1.chunk.js.LICENSE.txt",
     "static/media/LT-Amber-Regular.fd1dfba6.otf": "/static/media/LT-Amber-Regular.fd1dfba6.otf",
     "static/media/App.css": "/static/media/Paloseco-Medium.690da62f.ttf",
     "static/media/accounting.db671764.jpeg": "/static/media/accounting.db671764.jpeg",
     "static/media/branding-illustration.98152491.svg": "/static/media/branding-illustration.98152491.svg",
     "static/media/career.fd585841.mp4": "/static/media/career.fd585841.mp4",
-    "static/media/driver.120e0727.jpeg": "/static/media/driver.120e0727.jpeg",
+    "static/media/driver-van.31544f1c.jpeg": "/static/media/driver-van.31544f1c.jpeg",
     "static/media/growth-curve.d842ca85.svg": "/static/media/growth-curve.d842ca85.svg",
     "static/media/ideation-illustration.37835b48.svg": "/static/media/ideation-illustration.37835b48.svg",
     "static/media/influencer.9344c8a2.jpeg": "/static/media/influencer.9344c8a2.jpeg",
-    "static/media/orca-banner.1ae72552.jpeg": "/static/media/orca-banner.1ae72552.jpeg",
     "static/media/orca-logo-new.27954bb3.png": "/static/media/orca-logo-new.27954bb3.png",
     "static/media/orca.ab4e1f10.jpeg": "/static/media/orca.ab4e1f10.jpeg",
     "static/media/personal-assistant.18e04660.jpeg": "/static/media/personal-assistant.18e04660.jpeg",
@@ -34,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2bf4cb2a.js",
-    "static/js/2.5735d635.chunk.js",
+    "static/js/2.58dbd7b1.chunk.js",
     "static/css/main.6d5537b5.chunk.css",
-    "static/js/main.b73c4188.chunk.js"
+    "static/js/main.c8b7d1ef.chunk.js"
   ]
 }
