@@ -10,7 +10,9 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
+    NavIcon,
 } from './styles';
+import logo from '../../assets/images/orca-logo-new.png';
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -37,10 +39,11 @@ const Navbar = ({ toggle }) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            ORCA
+                            <NavIcon src={logo} scrollNav={scrollNav} />
+                            {/* ORCA */}
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
-                            <FaBars />
+                            <FaBars color="#000" />
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>

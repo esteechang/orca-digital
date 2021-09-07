@@ -115,6 +115,7 @@ export const SocialLogo = styled(LinkR)`
 export const WebsiteRights = styled.small`
     color: #fff;
     margin-bottom: 16px;
+    font-family: 'LTAmberRegular';
 `;
 export const SocialIcons = styled.div`
     display: flex;
@@ -131,4 +132,10 @@ export const SocialIconLink = styled.a`
         color: #ffd700;
         transform: scale(1.2);
     }
+`;
+
+export const OrcaIcon = styled.img`
+    margin-right: 0.5rem;
+    height: 150px;
+    width: 150px;
 `;

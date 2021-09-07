@@ -3,7 +3,7 @@ import { Link as LinkRoute } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? ' #000' : 'transparent')};
+    background: ${({ scrollNav }) => (scrollNav ? ' #fff' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRoute)`
-    color: #fff;
+    color: #000;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -39,6 +39,12 @@ export const NavLogo = styled(LinkRoute)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+`;
+
+export const NavIcon = styled.img`
+    margin-right: 0.5rem;
+    height: 150px;
+    width: 150px;
 `;
 
 // this one is for the mobile header icon, won't display on webpage
@@ -75,7 +81,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -84,6 +90,12 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #FFD700;
+        border-bottom: 3px solid #ffd700;
     }
+
+    &:hover {
+        color: #ffd700;
+        transition: 0.2s ease-in-out;
+    }
+    font-family: 'PalosecoMedium';
 `;

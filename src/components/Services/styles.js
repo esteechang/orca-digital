@@ -7,7 +7,7 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: #f9f9f9;
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -81,6 +81,8 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+
+    font-family: 'LTAmberRegular';
 `;
 
 // export const ImageBg = styled.image`
