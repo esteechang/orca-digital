@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const ServicesContainer = styled.div`
+export const ContactUsContainer = styled.div`
+    background: #f9f9f9;
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
     @media screen and (max-width: 768px) {
         height: 1100px;
     }
@@ -16,7 +17,7 @@ export const ServicesContainer = styled.div`
     }
 `;
 
-export const ServicesH1 = styled.h1`
+export const ContactUsH1 = styled.h1`
     font-size: 2.5rem;
     color: #000;
 
@@ -29,7 +30,7 @@ export const ServicesH1 = styled.h1`
 
 export const Content = styled.div`
     /* background-image: url(${(props) => props.img}); */
-    background: #fff;
+    background: #f9f9f9;
 
     overflow: hidden;
 
@@ -42,6 +43,7 @@ export const Content = styled.div`
     text-align: center;
     margin: auto;
     padding: 0;
+    margin-top: 60px;
 `;
 
 export const Input = styled.input`
@@ -50,6 +52,15 @@ export const Input = styled.input`
     border: 1px solid black;
     width: 600px;
     margin-bottom: 10px;
+    border-radius: 5px;
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }
 `;
 
 export const TextArea = styled.textarea`
@@ -59,6 +70,15 @@ export const TextArea = styled.textarea`
     height: 10em;
     width: 600px;
     margin-bottom: 10px;
+    border-radius: 5px;
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }
 `;
 
 export const ErrorMessage = styled.p`
@@ -68,4 +88,4 @@ export const ErrorMessage = styled.p`
 
 export const SubmitButton = styled.input`
     padding: 10px 10px;
-`
+`;

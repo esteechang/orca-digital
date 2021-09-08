@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '../Button/ButtonElement'
+import { Button } from '../Button/ButtonElement';
 
 import Video from '../../assets/videos/waves-2.mp4';
 import {
@@ -37,7 +37,7 @@ const HeroSection = () => {
                         primary="true" //remove for black bg
                         dark="true" // remove for white words
                     >
-                        Learn more {hover ? <ArrowForward /> : <ArrowRight />}{' '}
+                        <p style={{marginTop: 3}}>Learn more </p>{hover ? <ArrowForward /> : <ArrowRight />}{' '}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

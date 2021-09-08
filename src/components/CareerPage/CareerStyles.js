@@ -74,6 +74,9 @@ export const CareerTitle = styled.h2`
 export const CareerDescription = styled.p`
     font-size: 1rem;
     text-align: center;
+
+    font-family: 'LTAmberRegular';
+    font-size: 17px;
 `;
 
 export const CareerBtnWrapper = styled.div`

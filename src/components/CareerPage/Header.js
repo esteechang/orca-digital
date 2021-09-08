@@ -8,11 +8,13 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
+    NavIcon,
+    ArrowBack,
 } from './HeaderStyles';
 
+import OrcaLogo from '../../assets/images/orca-logo-new.png';
+
 const Header = () => {
-
-
     const toggleHome = () => {
         scroll.scrollToTop();
     };
@@ -22,7 +24,9 @@ const Header = () => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/" onClick={toggleHome}>
-                        ORCA
+                        <ArrowBack />
+                        <NavIcon src={OrcaLogo} />
+                        {/* ORCA */}
                     </NavLogo>
 
                     <NavMenu>

@@ -11,7 +11,6 @@ import Footer from '../components/Footer';
 import Careers from '../components/HeroSection/HeroSectionCareers';
 import ContactUs from '../components/ContactUs';
 
-import About from '../components/About';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +24,6 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-            {/* <About /> */}
             <InfoSection {...homeObjOne} />
             {/* <InfoSection {...homeObjTwo} /> */}
             <Services />

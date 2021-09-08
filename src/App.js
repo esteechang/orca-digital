@@ -4,37 +4,6 @@ import GlobalFonts from './assets/fonts/fonts';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
-// import Home from './components/pages/Home';
-// import Services from './components/pages/Services';
-// import Products from './components/pages/Products';
-// import SignUp from './components/pages/SignUp';
-// import Footer from './components/Footer/Footer';
-// import ScrollToTop from './components/ScrollToTop';
-
-// import Navbar from './components/Navbar';
-// import Sidebar from './components/Sidebar';
-
-// function App() {
-//     return (
-//         <>
-//             <Router>
-//                 {/* <ScrollToTop />  */}
-//                 <Sidebar />
-//                 <Navbar />
-//                 <Switch>
-//                     {/* home component */}
-//                     <Route path="/" exact component={Home} />
-//                     <Route path="/about-us" exact component={Services} />
-//                     <Route path="/services" exact component={Services} />
-//                     <Route path="/products" exact component={Products} />
-//                     <Route path="/sign-up" exact component={SignUp} />
-//                 </Switch>
-//                 <Footer />
-//             </Router>
-//         </>
-//     );
-// }
-
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages';
 import Careers from './pages/careers';
@@ -43,7 +12,7 @@ const App = () => {
     return (
         <Router>
             <GlobalFonts />
-            <ScrollToTop /> 
+            <ScrollToTop />
             <Route path="/" exact component={Home} />
             <Route path="/careers" exact component={Careers} />
         </Router>

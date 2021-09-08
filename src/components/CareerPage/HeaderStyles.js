@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Link as LinkRoute } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { MdArrowBack } from 'react-icons/md';
 
 export const Nav = styled.nav`
-    background: #000;
+    background: #fff;
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -30,7 +31,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkRoute)`
-    color: #fff;
+    color: #000;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -75,7 +76,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -83,5 +84,20 @@ export const NavLinks = styled(LinkScroll)`
     height: 100%;
     cursor: pointer;
     border-bottom: 3px solid #ffd700;
-    
+    &:hover {
+        color: #ffd700;
+        transition: 0.2s ease-in-out;
+    }
+`;
+
+export const NavIcon = styled.img`
+    margin-right: 0.5rem;
+    height: 150px;
+    width: 150px;
+`;
+
+export const ArrowBack = styled(MdArrowBack)`
+    margin-top: -5px;
+    font-size: 35px;
+    margin-left: -35px;
 `;

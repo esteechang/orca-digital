@@ -38,7 +38,7 @@ const HeroSection = () => {
                         dark="true" // remove for white words
                     >
                         <CareerLink to="/careers">
-                            Apply now
+                            <p style={{ marginTop: 3 }}>Apply now</p>
                             {hover ? <ArrowForward /> : <ArrowRight />}
                         </CareerLink>
                     </Button>

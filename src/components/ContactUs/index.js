@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import useForm from './useForm';
 import validate from './validateForm';
 
 import {
-    ServicesContainer,
-    ServicesH1,
-    Content,
+    ContactUsContainer,
+    ContactUsH1,
     Input,
     TextArea,
     ErrorMessage,
@@ -28,91 +27,87 @@ const ContactUs = () => {
         useForm(validate);
 
     return (
-        <ServicesContainer id="contact">
-            <Content>
-                <ServicesH1>Contact Us</ServicesH1>
-                <div>
-                    <div className="container">
-                        <form onSubmit={handleSubmit}>
-                            <div className="row pt-5 mx-auto">
-                                <div className="col-8 form-group mx-auto">
-                                    <Input
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Name"
-                                        name="name"
-                                        value={values.name}
-                                        onChange={handleChange}
-                                    />
-                                    {errors.name && (
-                                        <ErrorMessage>
-                                            {errors.name}
-                                        </ErrorMessage>
-                                    )}
-                                </div>
-                                <div className="col-8 form-group pt-2 mx-auto">
-                                    <Input
-                                        // type="email"
-                                        className="form-control"
-                                        placeholder="Email Address"
-                                        name="email"
-                                        value={values.email}
-                                        onChange={handleChange}
-                                    />
-                                    {errors.email && (
-                                        <ErrorMessage>
-                                            {errors.email}
-                                        </ErrorMessage>
-                                    )}
-                                </div>
-                                <div className="col-8 form-group pt-2 mx-auto">
-                                    <Input
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Subject"
-                                        name="subject"
-                                        value={values.subject}
-                                        onChange={handleChange}
-                                    />
-                                    {errors.subject && (
-                                        <ErrorMessage>
-                                            {errors.subject}
-                                        </ErrorMessage>
-                                    )}
-                                </div>
-                                <div className="col-8 form-group pt-2 mx-auto">
-                                    <TextArea
-                                        className="form-control"
-                                        id=""
-                                        cols="30"
-                                        rows="8"
-                                        placeholder="Your message"
-                                        name="message"
-                                        value={values.message}
-                                        onChange={handleChange}
-                                    ></TextArea>
-                                    {errors.message && (
-                                        <ErrorMessage>
-                                            {errors.message}
-                                        </ErrorMessage>
-                                    )}
-                                </div>
-                                <div className="col-8 pt-3 mx-auto">
-                                    <SubmitButton
-                                        type="submit"
-                                        className="btn btn-info"
-                                        value="Send Message"
-                                    ></SubmitButton>
-                                </div>
+        <ContactUsContainer id="contact">
+            {/* <Content> */}
+            <ContactUsH1>Contact Us</ContactUsH1>
+            <div>
+                <div className="container">
+                    <form onSubmit={handleSubmit}>
+                        <div className="row pt-5 mx-auto">
+                            <div className="col-8 form-group mx-auto">
+                                <Input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="Name"
+                                    name="name"
+                                    value={values.name}
+                                    onChange={handleChange}
+                                />
+                                {errors.name && (
+                                    <ErrorMessage>{errors.name}</ErrorMessage>
+                                )}
                             </div>
-                            <div className="row">
-                                {isSubmitted && !errors ? <Result /> : null}
+                            <div className="col-8 form-group pt-2 mx-auto">
+                                <Input
+                                    // type="email"
+                                    className="form-control"
+                                    placeholder="Email Address"
+                                    name="email"
+                                    value={values.email}
+                                    onChange={handleChange}
+                                />
+                                {errors.email && (
+                                    <ErrorMessage>{errors.email}</ErrorMessage>
+                                )}
                             </div>
-                        </form>
-                    </div>
+                            <div className="col-8 form-group pt-2 mx-auto">
+                                <Input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="Subject"
+                                    name="subject"
+                                    value={values.subject}
+                                    onChange={handleChange}
+                                />
+                                {errors.subject && (
+                                    <ErrorMessage>
+                                        {errors.subject}
+                                    </ErrorMessage>
+                                )}
+                            </div>
+                            <div className="col-8 form-group pt-2 mx-auto">
+                                <TextArea
+                                    className="form-control"
+                                    id=""
+                                    cols="30"
+                                    rows="8"
+                                    placeholder="Your message"
+                                    name="message"
+                                    value={values.message}
+                                    onChange={handleChange}
+                                ></TextArea>
+                                {errors.message && (
+                                    <ErrorMessage>
+                                        {errors.message}
+                                    </ErrorMessage>
+                                )}
+                            </div>
+                            <div className="col-8 pt-3 mx-auto">
+                                <SubmitButton
+                                    type="submit"
+                                    className="btn btn-info"
+                                    value="Send Message"
+                                ></SubmitButton>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {isSubmitted && !errors ? <Result /> : null}
+                        </div>
+                    </form>
                 </div>
-            </Content>
-        </ServicesContainer>
+            </div>
+            {/* </Content> */}
+        </ContactUsContainer>
     );
 };
 

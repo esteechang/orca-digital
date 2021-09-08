@@ -58,7 +58,7 @@ const InfoSection = ({
                                         dark={dark ? 1 : 0}
                                         dark2={dark2 ? 1 : 0}
                                     >
-                                        {buttonLabel}
+                                        <p style={{marginTop: 3}}>{buttonLabel} </p>
                                     </Button>
                                 </BtnWrap>
                             </TextWrapper>

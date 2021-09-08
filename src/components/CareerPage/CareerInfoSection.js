@@ -3,17 +3,10 @@ import React from 'react';
 import Video from '../../assets/videos/career.mp4';
 import InfluencerPic from '../../assets/images/influencer.jpeg';
 import PersonalAssistant from '../../assets/images/personal-assistant.jpeg';
-import Driver from '../../assets/images/driver.jpeg';
+import Driver from '../../assets/images/driver-van.jpeg';
 import Videographer from '../../assets/images/videographer.jpeg';
 import Writer from '../../assets/images/writer.jpeg';
 import AccountsManager from '../../assets/images/accounting.jpeg';
-
-import {
-    HeroBg,
-    HeroContainer,
-    VideoBg,
-    HeroContent,
-} from '../HeroSection/styles';
 
 import {
     CareersTopContainer,
@@ -30,7 +23,6 @@ const HeroSection = () => {
     return (
         <>
             <CareersTopContainer id="careers">
-              
                 {/* <HeroBg>
                     <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
                 </HeroBg> */}
@@ -85,7 +77,15 @@ const HeroSection = () => {
                         </CareerBtnWrapper>
                     </CareersCard>
                     <CareersCard>
-                        <Img src={Driver} />
+                        <div
+                            style={{
+                                height: 200,
+                                width: 200,
+                                marginBottom: 10,
+                            }}
+                        >
+                            <Img src={Driver} />
+                        </div>
                         <CareerTitle>Driver</CareerTitle>
                         <CareerDescription>
                             We are looking for punctual candidates with good
@@ -134,7 +134,15 @@ const HeroSection = () => {
                         </CareerBtnWrapper>
                     </CareersCard>
                     <CareersCard>
-                        <Img src={Writer} />
+                        <div
+                            style={{
+                                height: 200,
+                                width: 200,
+                                marginBottom: 10,
+                            }}
+                        >
+                            <Img src={Writer} />
+                        </div>
                         <CareerTitle>Writer</CareerTitle>
                         <CareerDescription>
                             We believe words can be the factor that transforms
@@ -157,7 +165,9 @@ const HeroSection = () => {
                         </CareerBtnWrapper>
                     </CareersCard>
                     <CareersCard>
-                        <Img src={AccountsManager} />
+                        <div>
+                            <Img src={AccountsManager} />
+                        </div>
                         <CareerTitle>Accounts Manager</CareerTitle>
                         <CareerDescription>
                             Efficiency and efficacy are valued here at Orca

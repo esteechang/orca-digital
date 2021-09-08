@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ServicesContainer = styled.div`
+export const TestimonialsContainer = styled.div`
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ export const ServicesContainer = styled.div`
     }
 `;
 
-export const ServicesWrapper = styled.div`
+export const TestimonialsWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -54,7 +54,7 @@ export const VideoBg = styled.video`
     background: #232a34;
 `;
 
-export const ServicesCard = styled.div`
+export const TestimonialsCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -74,13 +74,13 @@ export const ServicesCard = styled.div`
     }
 `;
 
-export const ServicesIcon = styled.img`
+export const TestimonialsIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1`
+export const TestimonialsH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 64px;
@@ -90,12 +90,12 @@ export const ServicesH1 = styled.h1`
     }
 `;
 
-export const ServicesH2 = styled.h2`
+export const TestimonialsH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
 `;
 
-export const ServicesP = styled.p`
+export const TestimonialsP = styled.p`
     font-size: 1rem;
     text-align: center;
 `;

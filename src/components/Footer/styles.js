@@ -68,6 +68,18 @@ export const FooterLink = styled(LinkR)`
     }
 `;
 
+export const FooterSocialLinks = styled.a`
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+        color: #ffd700;
+        transition: 0.3s ease-out;
+    }
+`;
+
 export const FooterLinkScroll = styled(LinkScroll)`
     color: #fff;
     text-decoration: none;

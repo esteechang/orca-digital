@@ -25,6 +25,7 @@ import {
     SocialIcons,
     SocialIconLink,
     OrcaIcon,
+    FooterSocialLinks,
 } from './styles';
 
 const Footer = () => {
@@ -40,7 +41,16 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle> About Us</FooterLinkTitle>
                             <FooterLink to="/">How it works</FooterLink>
-                            <FooterLink to="/">Testimonials</FooterLink>
+                            <FooterLinkScroll
+                                to="testimonials"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                            >
+                                Testimonials
+                            </FooterLinkScroll>
                             <FooterLinkScroll
                                 to="careers"
                                 smooth={true}
@@ -55,7 +65,16 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle> Contact Us</FooterLinkTitle>
-                            <FooterLink to="/">Contact</FooterLink>
+                            <FooterLinkScroll
+                                to="contact"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                            >
+                                Contact
+                            </FooterLinkScroll>
                             {/* <FooterLink to="/">Support</FooterLink> */}
                             <FooterLink to="/">Destinations</FooterLink>
                             <FooterLink to="/">Sponsorships</FooterLink>
@@ -71,9 +90,27 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
-                            <FooterLink to="/">LinkedIn</FooterLink>
-                            <FooterLink to="/">Instagram</FooterLink>
-                            <FooterLink to="/">Facebook</FooterLink>
+                            <FooterSocialLinks
+                                href="//www.instagram.com/orcadigital48"
+                                target="_blank"
+                            >
+                                Instagram
+                            </FooterSocialLinks>
+                            <FooterSocialLinks
+                                href="//t.me/orcadigital"
+                                target="_blank"
+                            >
+                                Telegram
+                            </FooterSocialLinks>
+                            <FooterSocialLinks
+                                href="//www.linkedin.com/company/orca-digital-sg/"
+                                target="_blank"
+                            >
+                                LinkedIn
+                            </FooterSocialLinks>
+                            <FooterSocialLinks to="/">
+                                Facebook
+                            </FooterSocialLinks>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
@@ -111,7 +148,7 @@ const Footer = () => {
                                 <FaLinkedin />
                             </SocialIconLink>
                             <SocialIconLink
-                                href="//t.me/orcadigital"
+                                // href=""
                                 target="_blank"
                                 aria-label="Telegram"
                             >
