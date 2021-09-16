@@ -7,10 +7,11 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials/index1';
+import TestimonialsNew from '../components/Testimonials/testimonials';
 import Footer from '../components/Footer';
 import Careers from '../components/HeroSection/HeroSectionCareers';
 import ContactUs from '../components/ContactUs';
-
+import Review from '../components/Reviews/Review';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,9 @@ const Home = () => {
             <InfoSection {...homeObjOne} />
             {/* <InfoSection {...homeObjTwo} /> */}
             <Services />
-            <Testimonials />
+            {/* <Testimonials /> */}
+            {/* <Review /> */}
+            <TestimonialsNew />
             <Careers />
             {/* <InfoSection {...homeObjThree} /> */}
             <ContactUs />
