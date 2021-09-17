@@ -60,7 +60,9 @@ export const ImageContainer = styled.div`
     margin: 0 auto;
     margin-bottom: 1.5rem;
 
-    :before {
+
+    // this is for the "decoration behind the profile pic"
+    /* :before {
         content: '';
         width: 100%;
         height: 100%;
@@ -69,7 +71,7 @@ export const ImageContainer = styled.div`
         top: -0.23rem;
         right: -0.5rem;
         border-radius: 50%;
-    }
+    } */
 `;
 
 export const Image = styled.img`

@@ -11,7 +11,6 @@ import TestimonialsNew from '../components/Testimonials/testimonials';
 import Footer from '../components/Footer';
 import Careers from '../components/HeroSection/HeroSectionCareers';
 import ContactUs from '../components/ContactUs';
-import Review from '../components/Reviews/Review';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +28,7 @@ const Home = () => {
             {/* <InfoSection {...homeObjTwo} /> */}
             <Services />
             {/* <Testimonials /> */}
-            {/* <Review /> */}
+
             <TestimonialsNew />
             <Careers />
             {/* <InfoSection {...homeObjThree} /> */}
