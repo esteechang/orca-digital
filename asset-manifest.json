@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6d5537b5.chunk.css",
-    "main.js": "/static/js/main.7009d14c.chunk.js",
-    "main.js.map": "/static/js/main.7009d14c.chunk.js.map",
+    "main.js": "/static/js/main.fed71b9c.chunk.js",
+    "main.js.map": "/static/js/main.fed71b9c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2bf4cb2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2bf4cb2a.js.map",
-    "static/js/2.e9201c78.chunk.js": "/static/js/2.e9201c78.chunk.js",
-    "static/js/2.e9201c78.chunk.js.map": "/static/js/2.e9201c78.chunk.js.map",
+    "static/js/2.4716a2b6.chunk.js": "/static/js/2.4716a2b6.chunk.js",
+    "static/js/2.4716a2b6.chunk.js.map": "/static/js/2.4716a2b6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.6d5537b5.chunk.css.map": "/static/css/main.6d5537b5.chunk.css.map",
-    "static/js/2.e9201c78.chunk.js.LICENSE.txt": "/static/js/2.e9201c78.chunk.js.LICENSE.txt",
+    "static/js/2.4716a2b6.chunk.js.LICENSE.txt": "/static/js/2.4716a2b6.chunk.js.LICENSE.txt",
     "static/media/LT-Amber-Regular.fd1dfba6.otf": "/static/media/LT-Amber-Regular.fd1dfba6.otf",
     "static/media/App.css": "/static/media/Paloseco-Medium.690da62f.ttf",
     "static/media/accounting.db671764.jpeg": "/static/media/accounting.db671764.jpeg",
@@ -20,27 +20,22 @@
     "static/media/ideation-illustration.37835b48.svg": "/static/media/ideation-illustration.37835b48.svg",
     "static/media/influencer.9344c8a2.jpeg": "/static/media/influencer.9344c8a2.jpeg",
     "static/media/orca-logo-new.27954bb3.png": "/static/media/orca-logo-new.27954bb3.png",
-    "static/media/orca.ab4e1f10.jpeg": "/static/media/orca.ab4e1f10.jpeg",
     "static/media/personal-assistant.18e04660.jpeg": "/static/media/personal-assistant.18e04660.jpeg",
-    "static/media/placeholder1.74ed42df.png": "/static/media/placeholder1.74ed42df.png",
     "static/media/placeholder2.4bf5ca35.png": "/static/media/placeholder2.4bf5ca35.png",
     "static/media/placeholder3.7bcb81b8.png": "/static/media/placeholder3.7bcb81b8.png",
     "static/media/placeholder4.bbeaa192.png": "/static/media/placeholder4.bbeaa192.png",
     "static/media/placeholder5.2f69de2e.png": "/static/media/placeholder5.2f69de2e.png",
     "static/media/placeholder6.a02535e5.png": "/static/media/placeholder6.a02535e5.png",
-    "static/media/services2.daed731b.jpeg": "/static/media/services2.daed731b.jpeg",
     "static/media/socialmedia-illustration.09435914.svg": "/static/media/socialmedia-illustration.09435914.svg",
     "static/media/svg-2.def51c9b.svg": "/static/media/svg-2.def51c9b.svg",
-    "static/media/svg-4.c3b86670.svg": "/static/media/svg-4.c3b86670.svg",
-    "static/media/testimony-background.6ce8692b.mp4": "/static/media/testimony-background.6ce8692b.mp4",
     "static/media/videographer.2590398f.jpeg": "/static/media/videographer.2590398f.jpeg",
     "static/media/waves-2.4efe5739.mp4": "/static/media/waves-2.4efe5739.mp4",
     "static/media/writer.c1ec1d06.jpeg": "/static/media/writer.c1ec1d06.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.2bf4cb2a.js",
-    "static/js/2.e9201c78.chunk.js",
+    "static/js/2.4716a2b6.chunk.js",
     "static/css/main.6d5537b5.chunk.css",
-    "static/js/main.7009d14c.chunk.js"
+    "static/js/main.fed71b9c.chunk.js"
   ]
 }
