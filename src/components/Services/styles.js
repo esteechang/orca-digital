@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ServicesBackground from '../../assets/images/services2.jpeg';
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -85,29 +84,15 @@ export const ServicesP = styled.p`
     font-family: 'LTAmberRegular';
 `;
 
-// export const ImageBg = styled.image`
-//     width: 100%;
-//     height: 100%;
-//     background: #232a34;
-// `;
-// export const HeroBg = styled.div`
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-// `;
-
-export const Content = styled.div`
-    background-image: url(${(props) => props.img});
-
-    overflow: hidden;
-
-    width: 100%;
-    height: 100%;
-
-    background-size: cover; /* or contain depending on what you want */
-    background-position: center center;
-    background-repeat: no-repeat;
+export const TitleContainer = styled.div`
     text-align: center;
-    margin: auto;
-    padding: 0;
+    margin-bottom: 4rem;
+`;
+
+export const Underline = styled.div`
+    height: 0.25rem;
+    width: 7rem;
+    background: #ffd700;
+    margin-left: auto;
+    margin-right: auto;
 `;

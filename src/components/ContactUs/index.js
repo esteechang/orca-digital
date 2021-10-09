@@ -9,27 +9,52 @@ import {
     TextArea,
     ErrorMessage,
     SubmitButton,
+    TitleContainer,
+    Underline,
 } from './styles';
 
 const Result = () => {
     return (
-        <>
+        <div style={{ marginTop: 15 }}>
             <p>Your message has been successfully submitted!</p>
-            <p>We will get back to you soon.</p>
-        </>
+            <p>
+                Thank you for enquiring with{' '}
+                <p style={{ display: 'inline', color: 'gold' }}>Orca Digital</p>
+                , we will get back to you soon.
+            </p>
+        </div>
+    );
+};
+const FailedResult = () => {
+    return (
+        <div style={{ marginTop: 15 }}>
+            <p>
+                Sorry! An error has occurred with the system. Please try again.
+            </p>
+            <p>
+                If this problem persists, you may choose to email us directly{' '}
+                <a href="mailto:orcadigitalsg@orcadigital.online">here</a>.
+            </p>
+        </div>
     );
 };
 
 const ContactUs = () => {
-    // const [result, showResult] = useState(false);
-
-    const { handleChange, values, handleSubmit, errors, isSubmitted } =
-        useForm(validate);
+    const {
+        handleChange,
+        values,
+        handleSubmit,
+        errors,
+        isSubmitted,
+        apiError,
+    } = useForm(validate);
 
     return (
         <ContactUsContainer id="contact">
-            {/* <Content> */}
-            <ContactUsH1>Contact Us</ContactUsH1>
+            <TitleContainer>
+                <h1> Contact Us</h1>
+                <Underline />
+            </TitleContainer>
             <div>
                 <div className="container">
                     <form onSubmit={handleSubmit}>
@@ -96,17 +121,22 @@ const ContactUs = () => {
                                 <SubmitButton
                                     type="submit"
                                     className="btn btn-info"
-                                    value="Send Message"
-                                ></SubmitButton>
+                                    value="Take action!"
+                                />
                             </div>
                         </div>
                         <div className="row">
-                            {isSubmitted && !errors ? <Result /> : null}
+                            {isSubmitted ? <Result /> : null}
                         </div>
+
+                        <div className="row">
+                            {apiError ? <Result /> : null}
+                        </div>
+
+                        <div>{apiError ? <FailedResult /> : null}</div>
                     </form>
                 </div>
             </div>
-            {/* </Content> */}
         </ContactUsContainer>
     );
 };

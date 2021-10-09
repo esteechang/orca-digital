@@ -49,7 +49,7 @@ const HeroSection = () => {
                             we are and how you can be a part of that.
                         </CareerDescription>
                         <CareerBtnWrapper>
-                            <a href="mailto:orcadigital48@orcadigital.online?subject=Application%20for%20Influencer">
+                            <a href="mailto:orcadigitalsg@orcadigital.online?subject=Application%20for%20Influencer">
                                 Apply Now
                             </a>
                         </CareerBtnWrapper>
@@ -71,7 +71,7 @@ const HeroSection = () => {
                             how you can be part of this exciting venture.
                         </CareerDescription>
                         <CareerBtnWrapper>
-                            <a href="mailto:orcadigital48@orcadigital.online?subject=Application%20for%Personal Assistant">
+                            <a href="mailto:orcadigitalsg@orcadigital.online?subject=Application%20for%Personal Assistant">
                                 Apply Now
                             </a>
                         </CareerBtnWrapper>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                             stamina.
                         </CareerDescription>
                         <CareerBtnWrapper>
-                            <a href="mailto:orcadigital48@orcadigital.online?subject=Application%20for%20Driver">
+                            <a href="mailto:orcadigitalsg@orcadigital.online?subject=Application%20for%20Driver">
                                 Apply Now
                             </a>
                         </CareerBtnWrapper>
@@ -128,7 +128,7 @@ const HeroSection = () => {
                             marketing here.
                         </CareerDescription>
                         <CareerBtnWrapper>
-                            <a href="mailto:orcadigital48@orcadigital.online?subject=Application%20for%20Videographer">
+                            <a href="mailto:orcadigitalsg@orcadigital.online?subject=Application%20for%20Videographer">
                                 Apply Now
                             </a>
                         </CareerBtnWrapper>
@@ -159,7 +159,7 @@ const HeroSection = () => {
                             at Orca Digital.
                         </CareerDescription>
                         <CareerBtnWrapper>
-                            <a href="mailto:orcadigital48@orcadigital.online?subject=Application%20for%Personal Assistant">
+                            <a href="mailto:orcadigitalsg@orcadigital.online?subject=Application%20for%Personal Assistant">
                                 Apply Now
                             </a>
                         </CareerBtnWrapper>
@@ -184,7 +184,7 @@ const HeroSection = () => {
                             you and having you onboard with Orca Digital.
                         </CareerDescription>
                         <CareerBtnWrapper>
-                            <a href="mailto:orcadigital48@orcadigital.online?subject=Application%20for%20Accounts%20Manager">
+                            <a href="mailto:orcadigitalsg@orcadigital.online?subject=Application%20for%20Accounts%20Manager">
                                 Apply Now
                             </a>
                         </CareerBtnWrapper>

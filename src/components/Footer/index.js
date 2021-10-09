@@ -122,7 +122,7 @@ const Footer = () => {
                             ORCA
                         </SocialLogo>
                         <WebsiteRights>
-                            ORCA © {new Date().getFullYear()} All rights
+                            Orca Digital © {new Date().getFullYear()} All rights
                             reserved.
                         </WebsiteRights>
                         <SocialIcons>

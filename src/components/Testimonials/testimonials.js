@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import Icon1 from '../../assets/images/orca.jpeg';
-import Video from '../../assets/videos/testimony-background.mp4';
-import OrcaLogo from '../../assets/images/orca-logo-new.png';
 import data from './data';
+import { FaQuoteRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 import {
     TestimonialsContainer,
@@ -17,7 +15,6 @@ import {
     Message,
     PrevNextButton,
 } from './testimonialStyles';
-import { FaQuoteRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const Testimonials = () => {
     const [index, setIndex] = useState(0);
@@ -52,7 +49,7 @@ const Testimonials = () => {
         <>
             <TestimonialsContainer id="testimonials">
                 <TitleContainer>
-                    <h2 style={{fontSize: '2rem'}}>Our Testimonials</h2>
+                    <h1 >Our Testimonials</h1>
                     <Underline />
                 </TitleContainer>
                 <ReviewArticle>

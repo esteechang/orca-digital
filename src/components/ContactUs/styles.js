@@ -28,26 +28,8 @@ export const ContactUsH1 = styled.h1`
     }
 `;
 
-export const Content = styled.div`
-    /* background-image: url(${(props) => props.img}); */
-    background: #f9f9f9;
-
-    overflow: hidden;
-
-    width: 100%;
-    height: 100%;
-
-    background-size: cover; /* or contain depending on what you want */
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: auto;
-    padding: 0;
-    margin-top: 60px;
-`;
-
 export const Input = styled.input`
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 10px;
     border: 1px solid black;
     width: 600px;
@@ -61,10 +43,11 @@ export const Input = styled.input`
     @media screen and (max-width: 480px) {
         width: 300px;
     }
+    font-family: 'LTAmberRegular';
 `;
 
 export const TextArea = styled.textarea`
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 10px;
     border: 1px solid black;
     height: 10em;
@@ -79,6 +62,7 @@ export const TextArea = styled.textarea`
     @media screen and (max-width: 480px) {
         width: 300px;
     }
+    font-family: 'LTAmberRegular';
 `;
 
 export const ErrorMessage = styled.p`
@@ -88,4 +72,17 @@ export const ErrorMessage = styled.p`
 
 export const SubmitButton = styled.input`
     padding: 10px 10px;
+`;
+
+export const TitleContainer = styled.div`
+    text-align: center;
+    margin-bottom: 4rem;
+`;
+
+export const Underline = styled.div`
+    height: 0.25rem;
+    width: 7rem;
+    background: #ffd700;
+    margin-left: auto;
+    margin-right: auto;
 `;

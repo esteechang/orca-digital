@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from '../Button/ButtonElement';
-
 import Video from '../../assets/videos/career.mp4';
 import {
     HeroBg,
@@ -12,7 +10,7 @@ import {
     HeroBtnWrapper,
     ArrowForward,
     ArrowRight,
-    CareerLink,
+    CareerLinkContainer,
 } from './styles';
 
 const HeroSection = () => {
@@ -31,17 +29,16 @@ const HeroSection = () => {
                 <HeroH1>JOIN US</HeroH1>
                 <HeroP>Change the world.</HeroP>
                 <HeroBtnWrapper>
-                    <Button
+                    <CareerLinkContainer
+                        primary="true"
+                        dark="true"
+                        to="/careers"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
-                        primary="true" //remove for black bg
-                        dark="true" // remove for white words
                     >
-                        <CareerLink to="/careers">
-                            <p style={{ marginTop: 3 }}>Apply now</p>
-                            {hover ? <ArrowForward /> : <ArrowRight />}
-                        </CareerLink>
-                    </Button>
+                        <p style={{ marginTop: 3 }}>Apply now</p>
+                        {hover ? <ArrowForward /> : <ArrowRight />}
+                    </CareerLinkContainer>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

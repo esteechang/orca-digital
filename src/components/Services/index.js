@@ -1,5 +1,4 @@
 import React from 'react';
-import Icon1 from '../../assets/images/orca.jpeg';
 import BrandingIcon from '../../assets/images/branding-illustration.svg';
 import DigitalMarketingIcon from '../../assets/images/socialmedia-illustration.svg';
 import IdeationIcon from '../../assets/images/ideation-illustration.svg';
@@ -11,17 +10,18 @@ import {
     ServicesIcon,
     ServicesP,
     ServicesWrapper,
-    // ImageBg,
-    // HeroBg,
-    Content,
+    TitleContainer, 
+    Underline
 } from './styles';
-import ServicesBackground from '../../assets/images/services2.jpeg';
 
 const Services = () => {
     return (
         <ServicesContainer id="services">
-            {/* <Content img={ServicesBackground}> */}
-            <ServicesH1>Our Services</ServicesH1>
+            {/* <ServicesH1>Our Services</ServicesH1> */}
+            <TitleContainer>
+                    <h1 >Our Services</h1>
+                    <Underline />
+                </TitleContainer>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={BrandingIcon} />
@@ -45,7 +45,6 @@ const Services = () => {
                     </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
-            {/* </Content> */}
         </ServicesContainer>
     );
 };

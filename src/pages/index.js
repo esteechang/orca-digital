@@ -6,8 +6,7 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
 import Services from '../components/Services';
-import Testimonials from '../components/Testimonials/index1';
-import TestimonialsNew from '../components/Testimonials/testimonials';
+import Testimonials from '../components/Testimonials/testimonials';
 import Footer from '../components/Footer';
 import Careers from '../components/HeroSection/HeroSectionCareers';
 import ContactUs from '../components/ContactUs';
@@ -27,9 +26,7 @@ const Home = () => {
             <InfoSection {...homeObjOne} />
             {/* <InfoSection {...homeObjTwo} /> */}
             <Services />
-            {/* <Testimonials /> */}
-
-            <TestimonialsNew />
+            <Testimonials />
             <Careers />
             {/* <InfoSection {...homeObjThree} /> */}
             <ContactUs />

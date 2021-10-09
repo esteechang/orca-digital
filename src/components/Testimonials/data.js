@@ -12,7 +12,7 @@ const reviews = [
         name: 'shanon tang',
         job: 'director 1',
         image: Placeholder4,
-        text: "hi i am the boss. this company is good, people is good, work is awesome, please support!",
+        text: 'hi',
     },
     {
         id: 2,
