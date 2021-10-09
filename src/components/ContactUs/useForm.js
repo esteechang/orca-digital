@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { isEmpty } from 'lodash';
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const useForm = (validate) => {
@@ -53,7 +52,7 @@ const useForm = (validate) => {
     };
 
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const [apiError, setApiError] = useState(false)
+    const [apiError, setApiError] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -73,7 +72,7 @@ const useForm = (validate) => {
                     },
                     (error) => {
                         console.log(error.text);
-                        setApiError(true)
+                        setApiError(true);
                     }
                 );
             console.log('ok email sent');
@@ -83,7 +82,14 @@ const useForm = (validate) => {
         }
     };
 
-    return { handleChange, values, handleSubmit, errors, isSubmitted, apiError };
+    return {
+        handleChange,
+        values,
+        handleSubmit,
+        errors,
+        isSubmitted,
+        apiError,
+    };
 };
 
 export default useForm;

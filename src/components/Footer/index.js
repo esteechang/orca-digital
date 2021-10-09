@@ -1,8 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
-import OrcaLogo from '../../assets/images/orca-logo-new.png';
-
 import {
     FaLinkedin,
     FaInstagram,
@@ -24,7 +22,7 @@ import {
     WebsiteRights,
     SocialIcons,
     SocialIconLink,
-    OrcaIcon,
+    // OrcaIcon,
     FooterSocialLinks,
 } from './styles';
 

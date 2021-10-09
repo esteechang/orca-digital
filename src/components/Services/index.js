@@ -5,7 +5,7 @@ import IdeationIcon from '../../assets/images/ideation-illustration.svg';
 import {
     ServicesCard,
     ServicesContainer,
-    ServicesH1,
+    // ServicesH1,
     ServicesH2,
     ServicesIcon,
     ServicesP,

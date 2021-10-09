@@ -1,5 +1,3 @@
-import ProfilePic from '../../assets/images/placeholder/man-placeholder.jpeg';
-import Placeholder1 from '../../assets/images/placeholder/placeholder1.png';
 import Placeholder2 from '../../assets/images/placeholder/placeholder2.png';
 import Placeholder3 from '../../assets/images/placeholder/placeholder3.png';
 import Placeholder4 from '../../assets/images/placeholder/placeholder4.png';

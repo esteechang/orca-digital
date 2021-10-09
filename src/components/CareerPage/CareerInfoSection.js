@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Video from '../../assets/videos/career.mp4';
 import InfluencerPic from '../../assets/images/influencer.jpeg';
 import PersonalAssistant from '../../assets/images/personal-assistant.jpeg';
 import Driver from '../../assets/images/driver-van.jpeg';

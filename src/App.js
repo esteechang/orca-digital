@@ -1,7 +1,7 @@
 import React from 'react';
 // import Navbar from './components/navbar/Navbar';
 import GlobalFonts from './assets/fonts/fonts';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 import ScrollToTop from './components/ScrollToTop';
