@@ -1,41 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.6d5537b5.chunk.css",
-    "main.js": "/static/js/main.fed71b9c.chunk.js",
-    "main.js.map": "/static/js/main.fed71b9c.chunk.js.map",
+    "main.js": "/static/js/main.e1e8392b.chunk.js",
+    "main.js.map": "/static/js/main.e1e8392b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2bf4cb2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2bf4cb2a.js.map",
-    "static/js/2.4716a2b6.chunk.js": "/static/js/2.4716a2b6.chunk.js",
-    "static/js/2.4716a2b6.chunk.js.map": "/static/js/2.4716a2b6.chunk.js.map",
+    "static/js/2.8281a85a.chunk.js": "/static/js/2.8281a85a.chunk.js",
+    "static/js/2.8281a85a.chunk.js.map": "/static/js/2.8281a85a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.6d5537b5.chunk.css.map": "/static/css/main.6d5537b5.chunk.css.map",
-    "static/js/2.4716a2b6.chunk.js.LICENSE.txt": "/static/js/2.4716a2b6.chunk.js.LICENSE.txt",
+    "static/js/2.8281a85a.chunk.js.LICENSE.txt": "/static/js/2.8281a85a.chunk.js.LICENSE.txt",
     "static/media/LT-Amber-Regular.fd1dfba6.otf": "/static/media/LT-Amber-Regular.fd1dfba6.otf",
     "static/media/App.css": "/static/media/Paloseco-Medium.690da62f.ttf",
-    "static/media/accounting.db671764.jpeg": "/static/media/accounting.db671764.jpeg",
-    "static/media/branding-illustration.98152491.svg": "/static/media/branding-illustration.98152491.svg",
-    "static/media/career.fd585841.mp4": "/static/media/career.fd585841.mp4",
-    "static/media/driver-van.31544f1c.jpeg": "/static/media/driver-van.31544f1c.jpeg",
-    "static/media/growth-curve.d842ca85.svg": "/static/media/growth-curve.d842ca85.svg",
-    "static/media/ideation-illustration.37835b48.svg": "/static/media/ideation-illustration.37835b48.svg",
-    "static/media/influencer.9344c8a2.jpeg": "/static/media/influencer.9344c8a2.jpeg",
-    "static/media/orca-logo-new.27954bb3.png": "/static/media/orca-logo-new.27954bb3.png",
-    "static/media/personal-assistant.18e04660.jpeg": "/static/media/personal-assistant.18e04660.jpeg",
-    "static/media/placeholder2.4bf5ca35.png": "/static/media/placeholder2.4bf5ca35.png",
-    "static/media/placeholder3.7bcb81b8.png": "/static/media/placeholder3.7bcb81b8.png",
-    "static/media/placeholder4.bbeaa192.png": "/static/media/placeholder4.bbeaa192.png",
-    "static/media/placeholder5.2f69de2e.png": "/static/media/placeholder5.2f69de2e.png",
-    "static/media/placeholder6.a02535e5.png": "/static/media/placeholder6.a02535e5.png",
-    "static/media/socialmedia-illustration.09435914.svg": "/static/media/socialmedia-illustration.09435914.svg",
-    "static/media/svg-2.def51c9b.svg": "/static/media/svg-2.def51c9b.svg",
-    "static/media/videographer.2590398f.jpeg": "/static/media/videographer.2590398f.jpeg",
-    "static/media/waves-2.4efe5739.mp4": "/static/media/waves-2.4efe5739.mp4",
-    "static/media/writer.c1ec1d06.jpeg": "/static/media/writer.c1ec1d06.jpeg"
+    "static/media/orca-favicon.1b034a87.png": "/static/media/orca-favicon.1b034a87.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2bf4cb2a.js",
-    "static/js/2.4716a2b6.chunk.js",
+    "static/js/2.8281a85a.chunk.js",
     "static/css/main.6d5537b5.chunk.css",
-    "static/js/main.fed71b9c.chunk.js"
+    "static/js/main.e1e8392b.chunk.js"
   ]
 }
