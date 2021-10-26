@@ -19,4 +19,9 @@ export const Title = styled.h1`
     color: white;
     letter-spacing: 50pt;
     animation: 2s ${fadeInLeftAnimation};
+
+    @media screen and (max-width: 768px) {
+        font-size: 80pt;
+        letter-spacing: 15pt;
+    }
 `;
