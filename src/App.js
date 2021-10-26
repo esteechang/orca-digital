@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 import ScrollToTop from './components/ScrollToTop';
-import Home from './pages';
-import Careers from './pages/careers';
+import Home from './pages/home';
 
 const App = () => {
     return (
@@ -14,7 +13,6 @@ const App = () => {
             <GlobalFonts />
             <ScrollToTop />
             <Route path="/" exact component={Home} />
-            <Route path="/careers" exact component={Careers} />
         </Router>
     );
 };
