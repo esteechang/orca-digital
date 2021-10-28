@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
@@ -12,23 +12,9 @@ import {
     NavLinks,
     NavIcon,
 } from './styles';
-import OrcaLogo from '../../assets/images/orca-logo-new.png';
+import OrcaLogoGold from '../../assets/images/orca-logo-gold.png';
 
 const Navbar = ({ toggle }) => {
-    const [scrollNav, setScrollNav] = useState(false);
-
-    const changeNav = () => {
-        if (window.scrollY >= 80) {
-            setScrollNav(true);
-        } else {
-            setScrollNav(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav);
-    }, []);
-
     const toggleHome = () => {
         scroll.scrollToTop();
     };
@@ -36,14 +22,13 @@ const Navbar = ({ toggle }) => {
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
-                <Nav scrollNav={scrollNav}>
+                <Nav>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            <NavIcon src={OrcaLogo} scrollNav={scrollNav} />
-                            {/* ORCA */}
+                            <NavIcon src={OrcaLogoGold} />
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
-                            <FaBars color="#000" />
+                            <FaBars color="#fbbd14" />
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
@@ -71,30 +56,7 @@ const Navbar = ({ toggle }) => {
                                     Services
                                 </NavLinks>
                             </NavItem>
-                            <NavItem>
-                                <NavLinks
-                                    to="testimonials"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                >
-                                    Testimonials
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks
-                                    to="careers"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                >
-                                    Careers
-                                </NavLinks>
-                            </NavItem>
+
                             <NavItem>
                                 <NavLinks
                                     to="contact"
@@ -105,6 +67,19 @@ const Navbar = ({ toggle }) => {
                                     offset={-80}
                                 >
                                     Contact
+                                </NavLinks>
+                            </NavItem>
+
+                            <NavItem>
+                                <NavLinks
+                                    to="careers"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    Join Us
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>

@@ -3,17 +3,15 @@ import { Link as LinkRoute } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? ' #fff' : 'transparent')};
+    background: 'transparent';
     height: 80px;
-    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
     top: 0;
     z-index: 10;
-
+    width: 100%;
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
@@ -21,30 +19,25 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
-    max-width: 1100px;
+    margin: 0 50px;
+
+    justify-content: space-between;
 `;
 
 export const NavLogo = styled(LinkRoute)`
-    color: #000;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
+    margin-top: 20px;
 `;
 
 export const NavIcon = styled.img`
-    margin-right: 0.5rem;
-    height: 150px;
-    width: 150px;
+    height: 50px;
 `;
 
 // this one is for the mobile header icon, won't display on webpage
@@ -59,18 +52,20 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff;
+        color: #fbbd14;
     }
 `;
 
 // nav menu -- only for web
 export const NavMenu = styled.ul`
     display: flex;
-    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    /* align-items: center; */
     list-style: none;
-    text-align: center;
-    margin-right: -22px;
-
+    /* text-align: center; */
+    /* margin-right: 100; */
+    right: 0;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -78,24 +73,27 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+    margin-left: 36px;
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: #000;
+    color: #fbbd14;
     display: flex;
-    align-items: center;
+    /* align-items: flex-end; */
     text-decoration: none;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     height: 100%;
     cursor: pointer;
+    margin-top: 50px;
 
     &.active {
-        border-bottom: 3px solid #ffd700;
+        border-bottom: 3px solid #fbbd14;
     }
 
     &:hover {
-        color: #ffd700;
+        color: white;
         transition: 0.2s ease-in-out;
     }
-    font-family: 'PalosecoMedium';
+    font-family: 'MontserratMedium';
+    font-size: 14pt;
 `;

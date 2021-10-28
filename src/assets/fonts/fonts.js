@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import PalosecoMedium from './Paloseco-Medium.ttf';
 import LTAmberRegular from './LT-Amber-Regular.otf';
+import MontserratMedium from './Montserrat-Medium.ttf';
 
 export default createGlobalStyle`
     @font-face {
@@ -15,5 +16,12 @@ export default createGlobalStyle`
     font-family: 'LTAmberRegular';
     src: local('LTAmberRegular'),
         url(${LTAmberRegular}) format("opentype");
-}
+    }
+
+    @font-face {
+        font-family: 'MontserratMedium';
+        src: local('MontserratMedium'),
+        url(${MontserratMedium}) format('truetype');
+        font-style: normal;
+    }
 `;
