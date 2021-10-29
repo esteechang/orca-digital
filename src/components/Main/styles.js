@@ -1,15 +1,25 @@
 import styled, { keyframes } from 'styled-components';
-import { fadeIn, fadeInLeft } from 'react-animations';
+import { fadeIn, fadeInLeft, fadeInRight } from 'react-animations';
 
-const fadeInAnimation = keyframes`${fadeIn}`;
+// const fadeInAnimation = keyframes`${fadeIn}`;
 const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+const fadeInAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     /* background-color: #000; */
     display: flex;
     flex-direction: column;
-    /* animation:  ${fadeInAnimation} linear; */
 `;
 
 export const BgImageContainer = styled.div`
@@ -32,11 +42,16 @@ export const ImageBg = styled.img`
     background-size: 0 0;
 `;
 
+export const TitleContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
 export const Title = styled.h1`
     font-size: 77pt;
     color: #fbbd14;
 
-    animation: 2s ${fadeInLeftAnimation};
+    /* animation: 2s ${fadeInLeftAnimation}; */
 
     @media screen and (max-width: 768px) {
         font-size: 40pt;
@@ -47,10 +62,13 @@ export const Title = styled.h1`
 `;
 
 export const WhiteTitle = styled.h1`
+    margin-left: 30px;
     font-size: 77pt;
     display: inline;
     color: #fff;
     font-family: 'PalosecoMedium';
+
+    /* animation: 2s ${fadeInLeftAnimation}; */
 
     @media screen and (max-width: 768px) {
         font-size: 40pt;
@@ -72,8 +90,7 @@ export const SubtitleContainer = styled.div`
     align-self: flex-end;
     align-items: center;
     margin-top: 30px;
-
-    animation: 3s ${fadeInLeftAnimation};
+    /* animation: 3s ${fadeInRightAnimation}; */
 
     @media screen and (max-width: 768px) {
         align-self: center;
@@ -96,18 +113,18 @@ export const Subtitle = styled.p`
 `;
 
 export const BtnContainer = styled.div`
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 50px;
+
     align-self: flex-end;
     margin-right: 120px;
-
-    animation: 4s ${fadeInLeftAnimation};
 
     @media screen and (max-width: 768px) {
         align-self: center;
         margin-right: 0px;
     }
+
+    /* opacity: ${({ visible }) => (visible ? 1 : 0)}; */
+    /* animation: ${fadeInAnimation} 5s linear; */
 `;
 
 export const Divider = styled.div`
