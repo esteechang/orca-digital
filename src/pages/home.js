@@ -7,6 +7,7 @@ import { BgImageContainer, ImageBg } from '../components/Main/styles';
 import MainImageV2 from '../assets/images/MainscreenV2.jpeg';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer'
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ const Home = () => {
                     <Intro />
                     <Services />
                     <Contact />
+                    <Footer />
                 </div>
             )}
         </>

@@ -24,7 +24,7 @@ const ContactPage = () => {
         setShowModal((prev) => !prev);
     };
     return (
-        <Container>
+        <Container id="contact">
             <Fade direction="left" duration={2000} delay={1500} triggerOnce>
                 <TitleContainer>
                     <WhiteTitle>LETS</WhiteTitle>

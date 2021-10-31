@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const FooterContainer = styled.footer`
-    background-color: #101522;
+    background-color: #000;
 `;
 
 export const FooterWrap = styled.div`
@@ -41,7 +41,7 @@ export const FooterLinkItems = styled.div`
     text-align: left;
     width: 160px;
     box-sizing: border-box;
-    color: #fff;
+    color: #fbbd14;
 
     @media screen and (max-width: 420px) {
         margin: 0;
@@ -51,43 +51,43 @@ export const FooterLinkItems = styled.div`
 `;
 
 export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 16px;
     font-weight: bold;
 `;
 
 export const FooterLink = styled(LinkR)`
-    color: #fff;
+    color: #fbbd14;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14px;
-
+    font-size: 16px;
+    cursor: pointer;
     &:hover {
-        color: #ffd700;
+        color: #fff;
         transition: 0.3s ease-out;
     }
 `;
 
 export const FooterSocialLinks = styled.a`
-    color: #fff;
+    color: #fbbd14;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     &:hover {
-        color: #ffd700;
+        color: #fff;
         transition: 0.3s ease-out;
     }
 `;
 
 export const FooterLinkScroll = styled(LinkScroll)`
-    color: #fff;
+    color: #fbbd14;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14px;
-
+    font-size: 16px;
+    cursor: pointer;
     &:hover {
-        color: #ffd700;
+        color: #fff;
         transition: 0.3s ease-out;
     }
 `;
@@ -109,23 +109,23 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(LinkR)`
-    color: #fff;
+    color: #fbbd14;
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
     font-weight: bold;
 
     &:hover {
-        color: #ffd700;
+        color: #fff;
     }
 `;
 
 export const WebsiteRights = styled.small`
-    color: #fff;
+    color: #fbbd14;
     margin-bottom: 16px;
     font-family: 'LTAmberRegular';
 `;
@@ -137,12 +137,11 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-    color: #fff;
+    color: #fbbd14;
     font-size: 24px;
 
     &:hover {
-        color: #ffd700;
-        transform: scale(1.2);
+        color: #fff;
     }
 `;
 

@@ -7,6 +7,7 @@ import {
     FaFacebook,
     FaTelegramPlane,
 } from 'react-icons/fa';
+
 import {
     FooterContainer,
     FooterWrap,
@@ -22,9 +23,10 @@ import {
     WebsiteRights,
     SocialIcons,
     SocialIconLink,
-    // OrcaIcon,
     FooterSocialLinks,
 } from './styles';
+
+import OrcaLogoGold from '../../assets/images/orca-logo-gold.png';
 
 const Footer = () => {
     const toggleHome = () => {
@@ -89,7 +91,7 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
                             <FooterSocialLinks
-                                href="//www.instagram.com/orcadigital48"
+                                href="//www.instagram.com/orcadigitalsg"
                                 target="_blank"
                             >
                                 Instagram
@@ -106,7 +108,10 @@ const Footer = () => {
                             >
                                 LinkedIn
                             </FooterSocialLinks>
-                            <FooterSocialLinks to="/">
+                            <FooterSocialLinks
+                                href="https://www.facebook.com/Orca-Digital-100552852435775/"
+                                target="_blank"
+                            >
                                 Facebook
                             </FooterSocialLinks>
                         </FooterLinkItems>
@@ -116,8 +121,11 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="/" onClick={toggleHome}>
-                            {/* <OrcaIcon src={OrcaLogo} /> */}
-                            ORCA
+                            <img
+                                src={OrcaLogoGold}
+                                alt="logo"
+                                style={{ width: 100 }}
+                            />
                         </SocialLogo>
                         <WebsiteRights>
                             Orca Digital © {new Date().getFullYear()} All rights
@@ -125,7 +133,7 @@ const Footer = () => {
                         </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink
-                                href="//www.instagram.com/orcadigital48"
+                                href="//www.instagram.com/orcadigitalsg"
                                 target="_blank"
                                 aria-label="Instagram"
                             >
@@ -146,9 +154,9 @@ const Footer = () => {
                                 <FaLinkedin />
                             </SocialIconLink>
                             <SocialIconLink
-                                // href=""
+                                href="https://www.facebook.com/Orca-Digital-100552852435775/"
                                 target="_blank"
-                                aria-label="Telegram"
+                                aria-label="Facebook"
                             >
                                 <FaFacebook />
                             </SocialIconLink>
