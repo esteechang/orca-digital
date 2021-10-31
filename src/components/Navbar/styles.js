@@ -97,3 +97,19 @@ export const NavLinks = styled(LinkScroll)`
     font-family: 'MontserratMedium';
     font-size: 14pt;
 `;
+
+export const ContactNavButton = styled.button`
+    color: #fbbd14;
+    cursor: pointer;
+    margin-top: 50px;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #fff;
+    }
+
+    font-family: 'MontserratMedium';
+    font-size: 14pt;
+`;

@@ -11,17 +11,25 @@ import {
     NavItem,
     NavLinks,
     NavIcon,
+    ContactNavButton,
 } from './styles';
 import OrcaLogoGold from '../../assets/images/orca-logo-gold.png';
+import ContactModal from '../ContactModal';
+import { useState } from 'react';
+import { Container } from '../ContactModal/styles';
 
 const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     };
+    const [showModal, setShowModal] = useState(false);
+    const openModal = () => {
+        setShowModal((prev) => !prev);
+    };
 
     return (
         <>
-            <IconContext.Provider value={{ color: '#fff' }}>
+            <IconContext.Provider value={{ color: '#fbbd14' }}>
                 <Nav>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
@@ -58,16 +66,9 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks
-                                    to="contact"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                >
+                                <ContactNavButton onClick={openModal}>
                                     Contact
-                                </NavLinks>
+                                </ContactNavButton>
                             </NavItem>
 
                             <NavItem>
@@ -85,6 +86,17 @@ const Navbar = ({ toggle }) => {
                         </NavMenu>
                     </NavbarContainer>
                 </Nav>
+                {showModal ? (
+                    <Container>
+                        {' '}
+                        <ContactModal
+                            showModal={showModal}
+                            setShowModal={setShowModal}
+                        />{' '}
+                    </Container>
+                ) : (
+                    ''
+                )}
             </IconContext.Provider>
         </>
     );

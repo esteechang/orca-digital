@@ -1,18 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-import { fadeIn, fadeInLeft, fadeInRight } from 'react-animations';
-
-// const fadeInAnimation = keyframes`${fadeIn}`;
-const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
-const fadeInRightAnimation = keyframes`${fadeInRight}`;
-
-const fadeInAnimation = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.div`
     height: 100%;
@@ -51,8 +37,6 @@ export const Title = styled.h1`
     font-size: 77pt;
     color: #fbbd14;
 
-    /* animation: 2s ${fadeInLeftAnimation}; */
-
     @media screen and (max-width: 768px) {
         font-size: 40pt;
         margin: 0 20px;
@@ -67,8 +51,6 @@ export const WhiteTitle = styled.h1`
     display: inline;
     color: #fff;
     font-family: 'PalosecoMedium';
-
-    /* animation: 2s ${fadeInLeftAnimation}; */
 
     @media screen and (max-width: 768px) {
         font-size: 40pt;
@@ -90,7 +72,6 @@ export const SubtitleContainer = styled.div`
     align-self: flex-end;
     align-items: center;
     margin-top: 30px;
-    /* animation: 3s ${fadeInRightAnimation}; */
 
     @media screen and (max-width: 768px) {
         align-self: center;
@@ -122,9 +103,6 @@ export const BtnContainer = styled.div`
         align-self: center;
         margin-right: 0px;
     }
-
-    /* opacity: ${({ visible }) => (visible ? 1 : 0)}; */
-    /* animation: ${fadeInAnimation} 5s linear; */
 `;
 
 export const Divider = styled.div`

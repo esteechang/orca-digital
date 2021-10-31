@@ -6,10 +6,10 @@ import { BgImageContainer, ImageBg } from '../components/Main/styles';
 
 import MainImageV2 from '../assets/images/MainscreenV2.jpeg';
 import Services from '../components/Services';
+import Contact from '../components/Contact';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
-    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         setTimeout(() => setLoading(false), 2000);
@@ -28,6 +28,7 @@ const Home = () => {
                     <Main />
                     <Intro />
                     <Services />
+                    <Contact />
                 </div>
             )}
         </>

@@ -18,7 +18,7 @@ const Intro = () => {
                 <Fade direction="up" delay={1000} triggerOnce >
                     <Divider />
                 </Fade>
-                <Fade direction="right" duration={3000} delay={1500} triggerOnce>
+                <Fade direction="right" duration={2000} delay={1500} triggerOnce>
                     <Subtitle>
                         Highly intelligent and social, the charismatic orcas
                         embody who we are. Make waves in your industry now and
