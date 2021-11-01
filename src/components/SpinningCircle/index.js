@@ -42,7 +42,7 @@ const index = () => {
                         />
                     </div>
                     <Fade
-                        direction="left"
+                        
                         duration={2000}
                         delay={2000}
                         triggerOnce
@@ -67,7 +67,7 @@ const index = () => {
                         />
                     </div>
                 </div>
-                <Fade direction="left" duration={2000} delay={2000} triggerOnce>
+                <Fade duration={2000} delay={1500} triggerOnce>
                     <div className="third-row">
                         <p>IDEATION</p>
                         <p>BRANDING</p>

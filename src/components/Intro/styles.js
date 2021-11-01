@@ -130,7 +130,8 @@ export const BottomText = styled.p`
     align-self: center;
     margin-top: auto;
     margin-bottom: 70px;
-
+    font-size: 12pt;
+    
     @media screen and (max-width: 768px) {
         display: unset;
     }
