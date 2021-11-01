@@ -53,3 +53,53 @@
 .box:last-child {
     margin-left: 100px;
 }
+
+.containerPhone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-row,
+.third-row {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    color: #fff;
+    font-size: 18pt;
+    margin-top: -10px;
+    font-weight: bold;
+}
+.third-row p {
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+
+    .box::before {
+        width: 150px;
+        height: 150px;
+        background: transparent;
+        border: 1px solid #fbbd14;
+    }
+
+    .box:first-child {
+        margin-right: 0px;
+    }
+
+    .box:last-child {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .containerPhone {
+        display: none;
+    }
+}

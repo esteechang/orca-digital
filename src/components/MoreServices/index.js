@@ -8,14 +8,16 @@ import {
     IconContainer,
     Blank,
 } from './styles';
+
 import icons from '../../icons';
+import './styles.css';
 
 const MoreServices = () => {
     return (
         <Container>
             <div>
                 <Column>
-                    <Item>
+                    <Item className="corporate">
                         <IconContainer>
                             <Icon src={icons[0]} alt="" />
                         </IconContainer>
@@ -35,7 +37,7 @@ const MoreServices = () => {
                         </IconContainer>
                         <IconText>Brand Consultancy</IconText>
                     </Item>
-                    <Item>
+                    <Item className="analytics">
                         <IconContainer>
                             <Icon src={icons[3]} alt="" />
                         </IconContainer>
@@ -98,7 +100,10 @@ const MoreServices = () => {
                             }}
                         >
                             <IconText>Content Management </IconText>
-                            <IconText> System (CMS)</IconText>
+                            <IconText style={{ marginTop: 0 }}>
+                                {' '}
+                                System (CMS)
+                            </IconText>
                         </div>
                     </Item>
                     <Item>

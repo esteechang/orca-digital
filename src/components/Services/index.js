@@ -7,6 +7,7 @@ import {
     Subtitle,
     Button,
     MoreServicesContainer,
+    TitlePhone
 } from './styles';
 import { Fade } from 'react-awesome-reveal';
 import MoreServices from '../MoreServices';
@@ -21,8 +22,9 @@ const Services = () => {
     return (
         <>
             <Container id="services">
-                <Fade direction="left" duration={2000} delay={1500} triggerOnce>
+                <Fade direction="left" duration={2000} delay={1500} triggerOnce style={{marginTop: 60, marginBottom: 40}}>
                     <Title>OUR SERVICES</Title>
+                    <TitlePhone>SERVICES</TitlePhone>
                 </Fade>
                 <Fade duration={2000} delay={2000} triggerOnce>
                     <SpinningCircle />

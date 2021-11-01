@@ -7,6 +7,10 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 15px;
+    }
 `;
 
 export const Column = styled.div`
@@ -25,10 +29,20 @@ export const IconContainer = styled.div`
     margin-bottom: 50px;
     margin-right: 15px;
     width: 50px;
+
+    @media screen and (max-width: 768px) {
+        width: 30px;
+        margin-bottom: 0px;
+    }
 `;
 
 export const Icon = styled.img`
     height: 25pt;
+
+    @media screen and (max-width: 768px) {
+        height: 15pt;
+        margin-left: 10px;
+    }
 `;
 
 export const IconText = styled.p`
@@ -36,11 +50,23 @@ export const IconText = styled.p`
     font-family: 'LTAmberRegular';
     font-size: 20pt;
     margin-top: 5px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 9pt;
+        text-align: center;
+    }
 `;
 
 export const Item = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 15px;
+    }
 `;
 
 export const Blank = styled.div`

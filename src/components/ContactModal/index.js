@@ -11,6 +11,8 @@ import {
     Button,
     SocialContainer,
     SocialIconLink,
+    SocialIcons,
+    StalkUs,
 } from './styles';
 
 const ContactModal = ({ showModal, setShowModal }) => {
@@ -46,10 +48,7 @@ const ContactModal = ({ showModal, setShowModal }) => {
                     >
                         <ModalInnerWrapper>
                             <Fade direction="up" cascade duration={2000}>
-                                <ModalText>
-                                    {' '}
-                                    Lets skip the many boxes.
-                                </ModalText>
+                                <ModalText>Lets skip the many boxes.</ModalText>
                                 <a
                                     href="mailto:orcadigitalsg@orcadigital.online"
                                     style={{ textDecoration: 'none' }}
@@ -59,35 +58,37 @@ const ContactModal = ({ showModal, setShowModal }) => {
                                     </Button>
                                 </a>
                                 <SocialContainer>
-                                    stalk us here.
-                                    <SocialIconLink
-                                        href="//www.instagram.com/orcadigitalsg"
-                                        target="_blank"
-                                        aria-label="Instagram"
-                                    >
-                                        <FaInstagram />
-                                    </SocialIconLink>
-                                    <SocialIconLink
-                                        href="https://www.facebook.com/Orca-Digital-100552852435775/"
-                                        target="_blank"
-                                        aria-label="Facebook"
-                                    >
-                                        <FaFacebook />
-                                    </SocialIconLink>
-                                    <SocialIconLink
-                                        href="//www.linkedin.com/company/orca-digital-sg/"
-                                        target="_blank"
-                                        aria-label="LinkedIn"
-                                    >
-                                        <FaLinkedin />
-                                    </SocialIconLink>
-                                    <SocialIconLink
-                                        href="https://linktr.ee/orcadigital48"
-                                        target="_blank"
-                                        aria-label="LinkedTree"
-                                    >
-                                        <SiLinktree />
-                                    </SocialIconLink>
+                                    <StalkUs> stalk us here.</StalkUs>
+                                    <SocialIcons>
+                                        <SocialIconLink
+                                            href="//www.instagram.com/orcadigitalsg"
+                                            target="_blank"
+                                            aria-label="Instagram"
+                                        >
+                                            <FaInstagram />
+                                        </SocialIconLink>
+                                        <SocialIconLink
+                                            href="https://www.facebook.com/Orca-Digital-100552852435775/"
+                                            target="_blank"
+                                            aria-label="Facebook"
+                                        >
+                                            <FaFacebook />
+                                        </SocialIconLink>
+                                        <SocialIconLink
+                                            href="//www.linkedin.com/company/orca-digital-sg/"
+                                            target="_blank"
+                                            aria-label="LinkedIn"
+                                        >
+                                            <FaLinkedin />
+                                        </SocialIconLink>
+                                        <SocialIconLink
+                                            href="https://linktr.ee/orcadigital48"
+                                            target="_blank"
+                                            aria-label="LinkedTree"
+                                        >
+                                            <SiLinktree />
+                                        </SocialIconLink>
+                                    </SocialIcons>
                                 </SocialContainer>
                             </Fade>
                         </ModalInnerWrapper>

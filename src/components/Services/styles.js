@@ -13,14 +13,24 @@ export const Container = styled.div`
 export const Title = styled.h1`
     font-size: 65pt;
     color: #fbbd14;
-    margin-top: 100px;
-    margin-bottom: 75px;
+
     @media screen and (max-width: 768px) {
-        font-size: 40pt;
-        margin: 0 20px;
+        display: none;
     }
 
     font-family: 'PalosecoMedium';
+`;
+
+export const TitlePhone = styled.h1`
+    display: none;
+    font-size: 40pt;
+
+    color: #fbbd14;
+    font-family: 'PalosecoMedium';
+
+    @media screen and (max-width: 768px) {
+        display: unset;
+    }
 `;
 
 export const SubtitleContainer = styled.div`
@@ -29,15 +39,19 @@ export const SubtitleContainer = styled.div`
     color: white;
     margin-top: 25px;
     font-size: 25pt;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const Subtitle = styled.p`
     :first-child {
-        margin-right: 150px;
+        margin-right: 190px;
     }
 
     :last-child {
-        margin-left: 150px;
+        margin-left: 190px;
     }
 `;
 
@@ -63,10 +77,20 @@ export const Button = styled.button`
         background-color: #fbbd14;
         color: #000;
     }
+
+    @media screen and (max-width: 768px) {
+        width: 200px;
+        padding: 8px 40px;
+        margin-top: 50px;
+    }
 `;
 
 export const MoreServicesContainer = styled.div`
     height: 60vh;
     background-color: #fbbd14;
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+        height: 40vh;
+    }
 `;

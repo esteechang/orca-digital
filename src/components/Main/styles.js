@@ -6,6 +6,10 @@ export const Container = styled.div`
     /* background-color: #000; */
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        height: 86vh;
+    }
 `;
 
 export const BgImageContainer = styled.div`
@@ -31,6 +35,11 @@ export const ImageBg = styled.img`
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
 `;
 
 export const Title = styled.h1`
@@ -39,7 +48,8 @@ export const Title = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: 40pt;
-        margin: 0 20px;
+        text-align: right;
+        margin-right: 45px;
     }
 
     font-family: 'PalosecoMedium';
@@ -54,6 +64,7 @@ export const WhiteTitle = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: 40pt;
+        margin-right: 45px;
     }
 `;
 
@@ -64,6 +75,10 @@ export const MainContent = styled.div`
     align-items: center;
     margin-top: 200px;
     z-index: 1;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 150px;
+    }
 `;
 
 export const SubtitleContainer = styled.div`
@@ -72,10 +87,6 @@ export const SubtitleContainer = styled.div`
     align-self: flex-end;
     align-items: center;
     margin-top: 30px;
-
-    @media screen and (max-width: 768px) {
-        align-self: center;
-    }
 `;
 
 export const Subtitle = styled.p`
@@ -88,7 +99,7 @@ export const Subtitle = styled.p`
     text-align: justify;
 
     @media screen and (max-width: 768px) {
-        margin-right: 0px;
+        font-size: 12pt;
         width: 300px;
     }
 `;
@@ -101,7 +112,6 @@ export const BtnContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         align-self: center;
-        margin-right: 0px;
     }
 `;
 
@@ -113,6 +123,8 @@ export const Divider = styled.div`
     height: 60px;
 
     @media screen and (max-width: 768px) {
-        height: 130px;
+        height: 90px;
+        margin-left: 40px;
+        margin-bottom: 5px;
     }
 `;

@@ -15,6 +15,12 @@ import {
     Subtitle,
     IconsContainer,
     SocialIconLink,
+    SmallText,
+    WhiteTitleForPhone,
+    DividerPhone,
+    SubtitleContainer,
+    SubtitlePhone,
+    
 } from './styles';
 import ContactModal from '../ContactModal';
 
@@ -25,14 +31,37 @@ const ContactPage = () => {
     };
     return (
         <Container id="contact">
+            <SmallText>So now,</SmallText>
             <Fade direction="left" duration={2000} delay={1500} triggerOnce>
                 <TitleContainer>
                     <WhiteTitle>LETS</WhiteTitle>
                     <WhiteTitle>CREATE</WhiteTitle>
+                    <WhiteTitleForPhone>LETS CREATE</WhiteTitleForPhone>
                     <Title>WAVES.</Title>
                     <Title>TOGETHER.</Title>
+                    <DividerPhone />
                 </TitleContainer>
             </Fade>
+
+            <SubtitleContainer>
+                {/* <Fade direction="up" delay={1000} triggerOnce> */}
+                {/* </Fade> */}
+                <Fade
+                    direction="right"
+                    duration={2000}
+                    delay={1500}
+                    triggerOnce
+                >
+                    {/* <Divider /> */}
+                    <SubtitlePhone>
+                        Interested in connecting with us? <br /> Reach out today
+                        and we'll discuss your vision for your business. <br />
+                        <br />
+                        Hit us up and coffee's on us!
+                    </SubtitlePhone>
+                </Fade>
+            </SubtitleContainer>
+
             <Fade duration={2000} delay={2000} triggerOnce>
                 <Button onClick={openModal}>CONTACT US</Button>
             </Fade>
@@ -50,6 +79,7 @@ const ContactPage = () => {
                     coffee's on us!
                 </Subtitle>
             </Fade>
+
             <Fade duration={2000} delay={3000} triggerOnce>
                 <IconsContainer>
                     <SocialIconLink href="mailto:orcadigitalsg@orcadigital.online">
