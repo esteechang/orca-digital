@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8add0d0.chunk.css",
-    "main.js": "/static/js/main.11dcc6b5.chunk.js",
-    "main.js.map": "/static/js/main.11dcc6b5.chunk.js.map",
+    "main.css": "/static/css/main.59669bb3.chunk.css",
+    "main.js": "/static/js/main.6bfd014c.chunk.js",
+    "main.js.map": "/static/js/main.6bfd014c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2bf4cb2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2bf4cb2a.js.map",
-    "static/js/2.b8792a9a.chunk.js": "/static/js/2.b8792a9a.chunk.js",
-    "static/js/2.b8792a9a.chunk.js.map": "/static/js/2.b8792a9a.chunk.js.map",
+    "static/js/2.7a63ada4.chunk.js": "/static/js/2.7a63ada4.chunk.js",
+    "static/js/2.7a63ada4.chunk.js.map": "/static/js/2.7a63ada4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e8add0d0.chunk.css.map": "/static/css/main.e8add0d0.chunk.css.map",
-    "static/js/2.b8792a9a.chunk.js.LICENSE.txt": "/static/js/2.b8792a9a.chunk.js.LICENSE.txt",
+    "static/css/main.59669bb3.chunk.css.map": "/static/css/main.59669bb3.chunk.css.map",
+    "static/js/2.7a63ada4.chunk.js.LICENSE.txt": "/static/js/2.7a63ada4.chunk.js.LICENSE.txt",
     "static/media/LT-Amber-Regular.fd1dfba6.otf": "/static/media/LT-Amber-Regular.fd1dfba6.otf",
     "static/media/MS2.9b06fb8e.png": "/static/media/MS2.9b06fb8e.png",
     "static/media/MS6.617cae9e.png": "/static/media/MS6.617cae9e.png",
@@ -18,14 +18,16 @@
     "static/media/MainscreenV2.47ea7405.jpeg": "/static/media/MainscreenV2.47ea7405.jpeg",
     "static/media/Montserrat-Medium.e2d60bc4.ttf": "/static/media/Montserrat-Medium.e2d60bc4.ttf",
     "static/media/OS1.7f8b2617.png": "/static/media/OS1.7f8b2617.png",
+    "static/media/OS2.b8912bec.png": "/static/media/OS2.b8912bec.png",
+    "static/media/OS3.b7914d95.png": "/static/media/OS3.b7914d95.png",
     "static/media/App.css": "/static/media/Paloseco-Medium.690da62f.ttf",
     "static/media/orca-favicon.1b034a87.png": "/static/media/orca-favicon.1b034a87.png",
     "static/media/orca-logo-gold.13f15721.png": "/static/media/orca-logo-gold.13f15721.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2bf4cb2a.js",
-    "static/js/2.b8792a9a.chunk.js",
-    "static/css/main.e8add0d0.chunk.css",
-    "static/js/main.11dcc6b5.chunk.js"
+    "static/js/2.7a63ada4.chunk.js",
+    "static/css/main.59669bb3.chunk.css",
+    "static/js/main.6bfd014c.chunk.js"
   ]
 }
