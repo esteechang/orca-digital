@@ -15,11 +15,12 @@ export const TitleContainer = styled.div`
     flex-direction: row;
     margin-top: 120px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
     }
+
 `;
 
 export const Title = styled.h1`
@@ -28,12 +29,20 @@ export const Title = styled.h1`
     margin-right: 20px;
     font-family: 'PalosecoMedium';
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         font-size: 35pt;
         margin-right: 0px;
         :last-of-type {
             margin-top: 40px;
         }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        font-size: 40pt;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        font-size: 65pt;
     }
 `;
 
@@ -43,8 +52,16 @@ export const WhiteTitle = styled.h1`
     margin-right: 20px;
     font-family: 'PalosecoMedium';
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         display: none;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        font-size: 40pt;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        font-size: 65pt;
     }
 `;
 
@@ -86,6 +103,10 @@ export const Subtitle = styled.p`
     @media screen and (max-width: 768px) {
         display: none;
     }
+    @media only screen and (min-width: 1441px) {
+        font-size: 18pt;
+        margin-top: 10px;
+    }
 `;
 
 export const IconsContainer = styled.div`
@@ -98,6 +119,10 @@ export const IconsContainer = styled.div`
     @media screen and (max-width: 768px) {
         width: 200px;
         margin-top: 20px;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        width: 550px;
     }
 `;
 
@@ -112,6 +137,10 @@ export const SocialIconLink = styled.a`
 
     @media screen and (max-width: 768px) {
         font-size: 20px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 35px;
     }
 `;
 
@@ -136,8 +165,10 @@ export const WhiteTitleForPhone = styled.h1`
     font-size: 35pt;
     margin-right: 15px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         display: unset;
+        font-size: 40pt;
+        margin-right: 20px;
     }
 `;
 

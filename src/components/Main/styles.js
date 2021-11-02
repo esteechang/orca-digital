@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     height: 100%;
     width: 100%;
-    /* background-color: #000; */
+    background-color: #000;
     display: flex;
     flex-direction: column;
 
@@ -49,11 +49,17 @@ export const TitleContainer = styled.div`
         flex-direction: column;
         align-items: flex-end;
     }
+
+    @media only screen and (min-width: 1230px) {
+        flex-direction: row;
+    }
 `;
 
 export const Title = styled.h1`
     font-size: 77pt;
     color: #fbbd14;
+    font-family: 'PalosecoMedium';
+    margin-right: 20px;
 
     @media screen and (max-width: 768px) {
         font-size: 40pt;
@@ -61,11 +67,17 @@ export const Title = styled.h1`
         margin-right: 45px;
     }
 
-    font-family: 'PalosecoMedium';
+
+    @media screen and (min-width: 769px)  and (max-width: 1200px){
+        font-size: 57pt;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        font-size: 100pt;
+    }
 `;
 
 export const WhiteTitle = styled.h1`
-    margin-left: 30px;
     font-size: 77pt;
     display: inline;
     color: #fff;
@@ -74,6 +86,14 @@ export const WhiteTitle = styled.h1`
     @media screen and (max-width: 768px) {
         font-size: 40pt;
         margin-right: 45px;
+    }
+
+    @media screen and (min-width: 769px)  and (max-width: 1200px){
+        font-size: 57pt;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        font-size: 100pt;
     }
 `;
 
@@ -96,6 +116,10 @@ export const SubtitleContainer = styled.div`
     align-self: flex-end;
     align-items: center;
     margin-top: 30px;
+
+    @media only screen and (min-width: 1441px) {
+        margin-top: 50px;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -111,6 +135,19 @@ export const Subtitle = styled.p`
         font-size: 12pt;
         width: 300px;
     }
+
+    @media screen and (min-width: 769px)  and (max-width: 1200px){
+        font-size: 12pt;
+        width: 440px;
+        margin-right: 110px;
+    }
+
+
+    @media only screen and (min-width: 1441px) {
+        font-size: 18pt;
+        width: 720px;
+        margin-right: 170px;
+    }
 `;
 
 export const BtnContainer = styled.div`
@@ -121,6 +158,11 @@ export const BtnContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         align-self: center;
+        margin-right: 100px;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        margin-right: 170px;
     }
 `;
 
@@ -128,12 +170,23 @@ export const Divider = styled.div`
     display: inline-block;
     width: 2px;
     background-color: #fbbd14;
-    margin: 0 20px;
+
+    margin-right: 20px;
+    margin-bottom: 5px;
     height: 60px;
 
     @media screen and (max-width: 768px) {
         height: 90px;
         margin-left: 40px;
+        margin-bottom: 5px;
+    }
+    @media screen and (min-width: 769px)  and (max-width: 1200px){
+        height: 50px;
+    }
+
+    
+    @media only screen and (min-width: 1441px) {
+        height: 75px;
         margin-bottom: 5px;
     }
 `;

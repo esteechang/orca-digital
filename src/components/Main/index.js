@@ -40,7 +40,8 @@ const Main = () => {
                     <MainContent>
                         <Fade direction={'left'} duration={2000} triggerOnce>
                             <TitleContainer>
-                                <Title>MARKETING MADE </Title>{' '}
+                                <Title>MARKETING </Title>{' '}
+                                <Title>MADE</Title>
                                 <WhiteTitle> EASY.</WhiteTitle>
                             </TitleContainer>
                         </Fade>

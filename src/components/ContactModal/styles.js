@@ -40,6 +40,16 @@ export const ModalInnerWrapper = styled.div`
     @media screen and (max-width: 768px) {
         width: 100%;
     }
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        width: 1000px;
+        height: 600px;
+    }
+
+    @media only screen and (min-width: 1441px) {
+        width: 1700px;
+        height: 800px;
+    }
 `;
 
 export const ModalContent = styled.div``;
@@ -129,6 +139,15 @@ export const CloseModalButton = styled(IoIosArrowBack)`
     @media screen and (max-width: 768px) {
         top: 20;
         left: 0;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        top: 200px;
+        left: 200px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        top: 150px;
+        left: 100px;
     }
 `;
 

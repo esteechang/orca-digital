@@ -93,4 +93,8 @@ export const MoreServicesContainer = styled.div`
     @media screen and (max-width: 768px) {
         height: 40vh;
     }
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        height: 45vh;
+    }
 `;

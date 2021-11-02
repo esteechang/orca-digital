@@ -11,6 +11,12 @@ export const Container = styled.div`
     @media screen and (max-width: 768px) {
         margin-left: 15px;
     }
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        margin-left: 70px;
+        width: 90%;
+        /* margin-right: 30px; */
+    }
 `;
 
 export const Column = styled.div`
@@ -23,6 +29,9 @@ export const Column = styled.div`
     :first-child {
         margin-top: 20px;
     }
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        margin-right: 40px;
+    }
 `;
 
 export const IconContainer = styled.div`
@@ -34,6 +43,9 @@ export const IconContainer = styled.div`
         width: 30px;
         margin-bottom: 0px;
     }
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        width: 40px;
+    }
 `;
 
 export const Icon = styled.img`
@@ -42,6 +54,10 @@ export const Icon = styled.img`
     @media screen and (max-width: 768px) {
         height: 15pt;
         margin-left: 10px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        height: 20pt;
+        margin-top: 5px;
     }
 `;
 
@@ -54,6 +70,10 @@ export const IconText = styled.p`
     @media screen and (max-width: 768px) {
         font-size: 9pt;
         text-align: center;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+        font-size: 16pt;
     }
 `;
 
