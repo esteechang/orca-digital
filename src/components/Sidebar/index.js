@@ -6,6 +6,7 @@ import {
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
+    SidebarLinkToPage
 } from './styles';
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -16,19 +17,18 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>
+                    <SidebarLinkToPage to="/about-us" onClick={toggle}>
                         About
-                    </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
+                    </SidebarLinkToPage>
+                    <SidebarLinkToPage to="/#services" onClick={toggle}>
                         Services
-                    </SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>
+                    </SidebarLinkToPage>
+                    <SidebarLinkToPage to="/#contact" onClick={toggle}>
                         Contact
-                    </SidebarLink>
+                    </SidebarLinkToPage>
                     <SidebarLink to="careers" onClick={toggle}>
                         Join us
-                    </SidebarLink>
-                   
+                    </SidebarLink>    
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

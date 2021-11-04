@@ -1,82 +1,42 @@
 import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
+import ContactModal from '../../ContactModal';
 
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { BsEnvelope } from 'react-icons/bs';
 import { SiLinktree } from 'react-icons/si';
 
 import {
-    Container,
-    TitleContainer,
-    Title,
-    WhiteTitle,
     Button,
+    Container,
     Subtitle,
+    Title,
+    BottomText,
     IconsContainer,
     SocialIconLink,
-    SmallText,
-    WhiteTitleForPhone,
-    DividerPhone,
-    SubtitleContainer,
-    SubtitlePhone,
-    
 } from './styles';
-import ContactModal from '../ContactModal';
 
-const ContactPage = () => {
+const PhoneVision = () => {
     const [showModal, setShowModal] = useState(false);
     const openModal = () => {
         setShowModal((prev) => !prev);
     };
     return (
-        <Container id="contact">
-            <SmallText>So now,</SmallText>
-            <Fade direction="left" duration={2000} delay={1500} triggerOnce>
-                <TitleContainer>
-                    <WhiteTitle>LETS</WhiteTitle>
-                    <WhiteTitle>CREATE</WhiteTitle>
-                    <WhiteTitleForPhone>LETS CREATE</WhiteTitleForPhone>
-                    <Title>WAVES.</Title>
-                    <Title>TOGETHER.</Title>
-                    <DividerPhone />
-                </TitleContainer>
+        <Container>
+            <Fade direction="left" duration={1000} triggerOnce>
+                <Title>VISION</Title>
             </Fade>
-
-            <SubtitleContainer>
-                {/* <Fade direction="up" delay={1000} triggerOnce> */}
-                {/* </Fade> */}
-                <Fade
-                    direction="right"
-                    duration={2000}
-                    delay={1500}
-                    triggerOnce
-                >
-                    {/* <Divider /> */}
-                    <SubtitlePhone>
-                        Interested in connecting with us? <br /> Reach out today
-                        and we'll discuss your vision for your business. <br />
-                        <br />
-                        Hit us up and coffee's on us!
-                    </SubtitlePhone>
-                </Fade>
-            </SubtitleContainer>
+            <Fade direction="right" duration={2000} triggerOnce>
+                <Subtitle>
+                    The apex predators of the ocean, we want to ensure our
+                    clients are at the top of their game with the Orca family
+                    pod.
+                </Subtitle>
+            </Fade>
 
             <Fade duration={2000} delay={2000} triggerOnce>
                 <Button onClick={openModal}>CONTACT US</Button>
-            </Fade>
-
-            <Fade
-                direction="right"
-                delay={2000}
-                duration={2000}
-                style={{ marginTop: 30 }}
-                triggerOnce
-            >
-                <Subtitle>
-                    Interested in connecting with us? <br /> Reach out today and
-                    we'll discuss your vision for your business. Hit us up and
-                    coffee's on us!
-                </Subtitle>
+                <BottomText>to find out even more.</BottomText>
             </Fade>
 
             <Fade duration={2000} delay={3000} triggerOnce>
@@ -114,10 +74,9 @@ const ContactPage = () => {
                     </SocialIconLink>
                 </IconsContainer>
             </Fade>
-
             <ContactModal showModal={showModal} setShowModal={setShowModal} />
         </Container>
     );
 };
 
-export default ContactPage;
+export default PhoneVision;

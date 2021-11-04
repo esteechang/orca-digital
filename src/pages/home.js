@@ -29,7 +29,7 @@ const Home = () => {
                     <Main />
                     <Intro />
                     <Services />
-                    <Contact />
+                    <Contact id="contact" />
                     <Footer />
                 </div>
             )}

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkRoute } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 export const Nav = styled.nav`
     background: 'transparent';
@@ -46,11 +47,11 @@ export const MobileIcon = styled.div`
 
     @media screen and (max-width: 768px) {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 2rem;
+        font-size: 1.8rem;
         cursor: pointer;
         color: #fbbd14;
     }
@@ -76,7 +77,29 @@ export const NavItem = styled.li`
     margin-left: 36px;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(HashLink)`
+    color: #fbbd14;
+    display: flex;
+    /* align-items: flex-end; */
+    text-decoration: none;
+    /* padding: 0 1rem; */
+    height: 100%;
+    cursor: pointer;
+    margin-top: 50px;
+
+    &.active {
+        border-bottom: 3px solid #fbbd14;
+    }
+
+    &:hover {
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+    font-family: 'MontserratMedium';
+    font-size: 14pt;
+`;
+
+export const NavLinkToPage = styled(LinkRoute)`
     color: #fbbd14;
     display: flex;
     /* align-items: flex-end; */
