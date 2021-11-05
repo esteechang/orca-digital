@@ -5,7 +5,8 @@ import { HashLink } from 'react-router-hash-link';
 
 export const Nav = styled.nav`
     background: 'transparent';
-    height: 80px;
+
+    height: ${({ about }) => (about ? '100px' : '80px')};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +34,9 @@ export const NavLogo = styled(LinkRoute)`
     justify-self: flex-start;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    /* align-items: center; */
+    margin-top: ${({ about }) => (about ? '15px' : '20px')};
+
 `;
 
 export const NavIcon = styled.img`
@@ -78,14 +80,14 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(HashLink)`
-    color: #fbbd14;
+    color: ${({ about }) => (about ? '#000' : '#fbbd14')};
     display: flex;
     /* align-items: flex-end; */
     text-decoration: none;
     /* padding: 0 1rem; */
     height: 100%;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: ${({ about }) => (about ? '40px' : '50px')};
 
     &.active {
         border-bottom: 3px solid #fbbd14;
@@ -100,14 +102,14 @@ export const NavLinks = styled(HashLink)`
 `;
 
 export const NavLinkToPage = styled(LinkRoute)`
-    color: #fbbd14;
+    color: ${({ about }) => (about ? '#000' : '#fbbd14')};
     display: flex;
     /* align-items: flex-end; */
     text-decoration: none;
     /* padding: 0 1rem; */
     height: 100%;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: ${({ about }) => (about ? '40px' : '50px')};
 
     &.active {
         border-bottom: 3px solid #fbbd14;
@@ -122,9 +124,9 @@ export const NavLinkToPage = styled(LinkRoute)`
 `;
 
 export const ContactNavButton = styled.button`
-    color: #fbbd14;
+    color: ${({ about }) => (about ? '#000' : '#fbbd14')};
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: ${({ about }) => (about ? '40px' : '50px')};
     border: none;
     background-color: transparent;
 

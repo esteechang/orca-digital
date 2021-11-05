@@ -1,83 +1,112 @@
 import styled from 'styled-components';
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 export const Container = styled.div`
     background-color: #fbbd14;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
     align-items: center;
-    @media screen and (min-width: 769px) {
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
         display: none;
     }
 `;
 
 export const Title = styled.h1`
-    margin-top: 50px;
-    font-size: 35pt;
+    font-size: 65pt;
     font-family: 'PalosecoMedium';
     color: #000;
-    margin-right: 190px;
-`;
 
-export const LargerTitle = styled.h1`
-    font-size: 35pt;
-    font-family: 'PalosecoMedium';
-    color: #000;
-    margin-right: 20px;
-    border-bottom: 2px solid black;
-    margin-bottom: 75px;
-`;
-
-export const HorizontalDivider = styled.div`
-    width: 250px;
-    background-color: #000;
-    height: 20px;
-    margin-bottom: 75px;
-    margin-right: 20px;
-    display: block;
 `;
 
 export const FoundersContainer = styled.div`
     display: flex;
     flex-direction: row;
-    height: 350px;
-    margin-bottom: 65px;
-    align-self: flex-end;
-    margin-right: 60px;
-    cursor: pointer;
 `;
 
-export const NameContainer = styled.div`
+export const Founder = styled.div`
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: center;
+    margin-right: 80px;
 `;
 
-export const Name = styled.p`
-    color: #000;
-    font-size: 17pt;
+export const FounderImg = styled.img`
+    width: 140px;
+    align-self: center;
+`;
+
+export const FounderName = styled.p`
+    font-size: 13pt;
     font-family: 'PalosecoMedium';
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 12px;
 `;
 
-export const Role = styled.p`
-    color: #1b1b1b;
+export const FounderRole = styled.p`
     font-size: 8pt;
-    margin-top: 10px;
     font-family: 'PalosecoLight';
+    color: #000;
 `;
 
-export const Arrow = styled.img`
-    width: 19px;
-    height: 29px;
-    margin-right: -5px;
-    margin-left: 15px;
+export const DescriptionContainer = styled.div`
+    width: 180px;
+    margin-top: 10px;
+    border-top: 2px solid #8a00ff;
+    border-bottom: 1px solid purple;
 `;
 
-export const BottomText = styled.p`
-    color: #fff;
-    font-size: 11pt;
+export const Description = styled.p`
+    color: #000;
+    font-size: 9pt;
+    margin-top: 20px;
     font-family: 'LTAmberLight';
+    text-align: justify;
+    text-align-last: center;
 `;
 
+export const InterestImg = styled.img`
+    width: 90px;
+    margin-top: 20px;
+`;
+
+export const QuoteOpening = styled(RiDoubleQuotesL)`
+    width: 8px;
+    display: block;
+    margin-left: 12px;
+    margin-bottom: -20px;
+    margin-top: -5px;
+`;
+
+export const QuoteClosing = styled(RiDoubleQuotesR)`
+    width: 8px;
+    margin-left: -5px;
+`;
+
+export const InterestDescription = styled.p`
+    color: #000;
+    font-family: 'MontserratRegular';
+    text-align: center;
+    font-size: 8pt;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+`;
+
+export const SocialContainer = styled.div`
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-top: 1px solid #8a00ff; */
+`;
+
+export const SocialImg = styled.img`
+    width: 20px;
+    margin-top: 25px;
+`;

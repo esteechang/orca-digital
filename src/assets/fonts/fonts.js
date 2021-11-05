@@ -7,6 +7,7 @@ import LTAmberRegular from './LT-Amber-Regular.otf';
 import LTAmberLight from './LT-Amber-Light.otf';
 
 import MontserratMedium from './Montserrat-Medium.ttf';
+import MontserratRegular from './Montserrat-Regular.ttf';
 
 export default createGlobalStyle`
     @font-face {
@@ -39,6 +40,13 @@ export default createGlobalStyle`
         font-family: 'MontserratMedium';
         src: local('MontserratMedium'),
         url(${MontserratMedium}) format('truetype');
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'MontserratRegular';
+        src: local('MontserratRegular'),
+        url(${MontserratRegular}) format('truetype');
         font-style: normal;
     }
 `;

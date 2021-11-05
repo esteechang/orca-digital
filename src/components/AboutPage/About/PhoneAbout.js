@@ -9,7 +9,7 @@ import {
     Role,
     Arrow,
     BottomText,
-} from './styles';
+} from './PhoneStyles';
 import founders from '../founders';
 import FounderModal from './FounderModal';
 import { Fade } from 'react-awesome-reveal';

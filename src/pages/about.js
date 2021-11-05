@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+
 import PhoneAbout from '../components/AboutPage/About/PhoneAbout';
 import PhoneFocus from '../components/AboutPage/Focus/PhoneFocus';
 import PhoneIntro from '../components/AboutPage/Intro/PhoneIntro';
@@ -7,16 +9,25 @@ import PhoneVision from '../components/AboutPage/Vision/PhoneVision';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 
+import Intro from '../components/AboutPage/Intro/Intro';
+import AboutUs from '../components/AboutPage/About/About';
+import { BackToTopArrow } from '../components/AboutPage/Intro/styles';
+
 const About = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         setIsOpen(!isOpen);
     };
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <>
-            <div style={{ backgroundColor: 'black' }}>
+            <div style={{ backgroundColor: '#fbbd14' }}>
                 <Sidebar isOpen={isOpen} toggle={toggle} />
-                <Navbar toggle={toggle} />
+                <Navbar toggle={toggle} about />
             </div>
             <div style={{ height: '100vh' }}>
                 <PhoneIntro />
@@ -24,6 +35,9 @@ const About = () => {
                 <PhoneMission />
                 <PhoneFocus />
                 <PhoneVision />
+                <BackToTopArrow onClick={toggleHome} />
+                <Intro />
+                <AboutUs />
             </div>
         </>
     );

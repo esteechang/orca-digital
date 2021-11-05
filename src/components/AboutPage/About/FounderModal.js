@@ -1,7 +1,5 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Fade } from 'react-awesome-reveal';
-import { HashLink } from 'react-router-hash-link';
-import Sidebar from '../../Sidebar';
 import founders from '../founders';
 
 import {
@@ -239,10 +237,16 @@ const FounderModal = ({
                             </DescriptionContainer>
                             <Fade delay={1500}>
                                 <SocialContainer>
-                                    <a href="google.com">
+                                    <a href="mailto:deonquek@orcadigital.online">
                                         <SocialImg src={founders[1].email} />
                                     </a>
-                                    <SocialImg src={founders[1].linkedIn} />
+                                    <a
+                                        href="https://www.google.com/search?q=deon+quek"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <SocialImg src={founders[1].linkedIn} />
+                                    </a>
                                     <SocialImg src={founders[1].linkTree} />
                                 </SocialContainer>
                             </Fade>
@@ -403,8 +407,8 @@ const FounderModal = ({
                             <Role>{founders[4].designation}</Role>
                             <DescriptionContainer
                                 style={{
-                                    borderTop: '2px solid maroon',
-                                    borderBottom: '1px solid maroon',
+                                    borderTop: '2px solid darkgreen',
+                                    borderBottom: '1px solid darkgreen',
                                 }}
                             >
                                 <Fade duration={2000}>
