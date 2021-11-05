@@ -6,7 +6,7 @@ import {
     SubtextContainer,
     TextContainer,
     Text,
-} from './styles';
+} from './PhoneStyles';
 import './styles.css';
 
 const PhoneMission = () => {
@@ -26,7 +26,7 @@ const PhoneMission = () => {
                             <Text>
                                 Redefining brands in a digital arena, we aim to
                                 use creative strategy, analytics and activation
-                                to connect and interact
+                                to connect and interact.
                             </Text>
                             <Text style={{ marginTop: 75 }}>
                                 To redefine the Asian digital arena.

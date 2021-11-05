@@ -51,6 +51,7 @@ export const ThinLine = styled.div`
     background-color: #fff;
     height: 215px;
     margin-left: 2px;
+    opacity: 0.5;
 `;
 
 export const Subtitle = styled.p`

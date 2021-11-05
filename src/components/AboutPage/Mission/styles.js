@@ -4,41 +4,29 @@ export const Container = styled.div`
     background-color: #000;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 `;
 
 export const Title = styled.h1`
-    margin-top: 20px;
-    font-size: 40pt;
+    font-size: 65pt;
     font-family: 'PalosecoMedium';
     color: #fbbd14;
-    align-self: flex-start;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 145px;
+    margin-top: -90px;
 `;
 
-export const SubtextContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-`;
-
-export const TextContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    margin-left: 20px;
-    margin-top: 20px;
-`;
-
-export const Text = styled.p`
-    font-size: 10pt;
+export const Subtitle = styled.p`
+    margin-left: 30px;
+    font-size: 15pt;
     font-family: 'LTAmberLight';
-    
+    width: 650px;
+    margin-top: 80px;
+    margin-right: -20px;
 `;

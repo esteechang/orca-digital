@@ -11,7 +11,7 @@ import {
     ElementContainer,
     Icon,
     Subtitle,
-} from './styles';
+} from './PhoneStyles';
 
 const PhoneFocus = () => {
     return (
@@ -62,7 +62,12 @@ const PhoneFocus = () => {
                             </ElementContainer>
                         </IconsRow>
                     </IconsContainer>
-                    <Fade direction="right" duration={2000} delay={1000} triggerOnce>
+                    <Fade
+                        direction="right"
+                        duration={2000}
+                        delay={1000}
+                        triggerOnce
+                    >
                         <div>
                             <ul class="progress-bar" style={{ height: 300 }}>
                                 <li></li>

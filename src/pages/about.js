@@ -12,6 +12,8 @@ import Sidebar from '../components/Sidebar';
 import Intro from '../components/AboutPage/Intro/Intro';
 import AboutUs from '../components/AboutPage/About/About';
 import { BackToTopArrow } from '../components/AboutPage/Intro/styles';
+import Mission from '../components/AboutPage/Mission/Mission';
+import Focus from '../components/AboutPage/Focus/Focus';
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +40,8 @@ const About = () => {
                 <BackToTopArrow onClick={toggleHome} />
                 <Intro />
                 <AboutUs />
+                <Mission />
+                <Focus />
             </div>
         </>
     );

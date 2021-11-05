@@ -23,10 +23,10 @@ import founders from '../founders';
 const About = () => {
     return (
         <Container>
-            <Fade duration={1500}>
+            <Fade duration={1500} triggerOnce>
                 <Title>THE ORCA POD</Title>
             </Fade>
-            <Fade delay={1000} duration={2000} direction="down">
+            <Fade delay={1000} duration={2000} direction="down" triggerOnce>
                 <FoundersContainer>
                     {/* JJ */}
                     <Founder style={{ marginTop: 30 , marginLeft: 60}}>
