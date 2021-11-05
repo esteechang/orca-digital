@@ -241,7 +241,7 @@ const FounderModal = ({
                                         <SocialImg src={founders[1].email} />
                                     </a>
                                     <a
-                                        href="https://www.google.com/search?q=deon+quek"
+                                        href="https://www.linkedin.com/in/deon-quek-3b34991b6"
                                         target="_blank"
                                         rel="noreferrer"
                                     >

@@ -54,7 +54,10 @@ const Navbar = ({ toggle, about }) => {
                                         About
                                     </NavLinkToPage>
                                 ) : (
-                                    <NavLinkToPage to="/about-us">
+                                    <NavLinkToPage
+                                        to="/about-us"
+                                        target="_blank"
+                                    >
                                         About
                                     </NavLinkToPage>
                                 )}

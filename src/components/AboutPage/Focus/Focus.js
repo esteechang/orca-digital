@@ -27,7 +27,7 @@ const Focus = () => {
                     <ThinLine style={{ height: 165 }} />
                 </DividerContainer>
             </Fade>
-            <Fade delay={1500} duration={2500} triggerOnce>
+            <Fade delay={2000} duration={2500} triggerOnce>
                 <IconsContainer>
                     <Column>
                         <ElementContainer style={{ marginBottom: 50 }}>

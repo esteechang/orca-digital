@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 import PhoneAbout from '../components/AboutPage/About/PhoneAbout';
@@ -14,6 +14,7 @@ import AboutUs from '../components/AboutPage/About/About';
 import { BackToTopArrow } from '../components/AboutPage/Intro/styles';
 import Mission from '../components/AboutPage/Mission/Mission';
 import Focus from '../components/AboutPage/Focus/Focus';
+import Vision from '../components/AboutPage/Vision/Vision';
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,10 @@ const About = () => {
     const toggleHome = () => {
         scroll.scrollToTop();
     };
+
+    useEffect(() => {
+        document.title = "Orca Digital SG | About "
+     }, []);
 
     return (
         <>
@@ -42,6 +47,7 @@ const About = () => {
                 <AboutUs />
                 <Mission />
                 <Focus />
+                <Vision />
             </div>
         </>
     );

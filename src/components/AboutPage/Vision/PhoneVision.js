@@ -14,7 +14,7 @@ import {
     BottomText,
     IconsContainer,
     SocialIconLink,
-} from './styles';
+} from './PhoneStyles';
 
 const PhoneVision = () => {
     const [showModal, setShowModal] = useState(false);
