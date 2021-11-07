@@ -18,8 +18,17 @@ export const Title = styled.h1`
     font-family: 'PalosecoMedium';
     color: #fbbd14;
     margin-right: 30px;
-    margin-bottom: 145px;
-    margin-top: -90px;
+    margin-bottom: 165px;
+    margin-top: -100px;
+
+    @media screen and (min-width: 1441px) {
+        font-size: 75pt;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1067px) {
+        font-size: 40pt;
+        margin-left: -25px;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -27,6 +36,61 @@ export const Subtitle = styled.p`
     font-size: 15pt;
     font-family: 'LTAmberLight';
     width: 650px;
-    margin-top: 80px;
+    margin-top: 190px;
     margin-right: -20px;
+
+    @media screen and (min-width: 1441px) {
+        font-size: 18pt;
+        width: 680px;
+        margin-right: 1px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        font-size: 12pt;
+        width: 450px;
+        /* margin-top: 120px; */
+        margin-right: 20px;
+    }
+
+    @media screen and (min-width: 951px) and (max-width: 1067px) {
+        font-size: 13pt;
+        width: 460px;
+        /* margin-top: 120px; */
+        margin-right: 0px;
+    }
+`;
+
+export const ThickLine = styled.div`
+    width: 5px;
+    background-color: #fff;
+    height: 370px;
+
+    position: fixed;
+    bottom: -195px;
+    right: -3px;
+
+    @media screen and (min-width: 1441px) {
+        /* height: 380px;
+        margin-top: 0px; */
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        height: 330px;
+        bottom: -172px;
+    }
+`;
+
+export const ThinLineTop = styled.div`
+    width: 1px;
+    background-color: #fff;
+    height: 100vh;
+    opacity: 0.5;
+
+    position: fixed;
+    bottom: -365px;
+
+    @media screen and (min-width: 1441px) {
+        /* height: 320px; */
+        margin-bottom: 0;
+    }
 `;

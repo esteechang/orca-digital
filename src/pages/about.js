@@ -27,7 +27,7 @@ const About = () => {
     };
 
     useEffect(() => {
-        document.title = "Orca Digital SG | About "
+        document.title = "Orca Digital | About "
      }, []);
 
     return (

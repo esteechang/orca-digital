@@ -17,6 +17,7 @@ export const ContentContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 280px;
 `;
 
 export const Title = styled.h1`
@@ -24,8 +25,14 @@ export const Title = styled.h1`
     font-family: 'PalosecoMedium';
     color: #fbbd14;
     margin-right: 30px;
-    margin-bottom: 145px;
-    margin-top: -110px;
+
+    @media screen and (min-width: 1441px) {
+        font-size: 75pt;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1067px) {
+        font-size: 40pt;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -35,6 +42,24 @@ export const Subtitle = styled.p`
     width: 620px;
     margin-top: 120px;
     margin-right: -65px;
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        font-size: 12pt;
+        width: 450px;
+        margin-right: -1px;
+    }
+
+    @media screen and (min-width: 951px) and (max-width: 1067px) {
+        font-size: 13pt;
+        width: 460px;
+        margin-right: -21px;
+    }
+
+    /* @media screen and (min-width: 1441px) {
+        font-size: 18pt;
+        width: 620px;
+        margin-top: 170px;
+    } */
 `;
 
 export const Button = styled.button`
@@ -52,7 +77,7 @@ export const Button = styled.button`
     align-items: center;
     transition: all 0.2s ease-in-out;
     border: none;
-    margin-top: -45px;
+    margin-top: 120px;
     margin-right: 250px;
 
     &:hover {
@@ -67,5 +92,40 @@ export const SmallText = styled.p`
     font-family: 'LTAmberLight';
     color: #fbbd14;
     margin-top: -35px;
-    margin-left: 150px;
+    margin-left: 180px;
+`;
+
+export const ThickLine = styled.div`
+    width: 5px;
+    background-color: #fff;
+    height: 125px;
+
+    position: fixed;
+    bottom: -82px;
+    right: -3px;
+
+    @media screen and (min-width: 1441px) {
+        /* height: 380px;
+        margin-top: 0px; */
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1067px) {
+        height: 100px;
+        bottom: -75px;
+    }
+`;
+
+export const ThinLine = styled.div`
+    width: 1px;
+    background-color: #fff;
+    height: 80vh;
+    opacity: 0.5;
+
+    position: fixed;
+    bottom: -215px;
+
+    @media screen and (min-width: 1441px) {
+        /* height: 320px; */
+        margin-bottom: 0;
+    }
 `;

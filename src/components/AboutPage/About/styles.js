@@ -19,6 +19,10 @@ export const Title = styled.h1`
     font-family: 'PalosecoMedium';
     color: #000;
 
+    @media screen and (min-width: 1441px) {
+        font-size: 75pt;
+        margin-bottom: 40px;
+    }
 `;
 
 export const FoundersContainer = styled.div`
@@ -31,11 +35,23 @@ export const Founder = styled.div`
     flex-direction: column;
     text-align: center;
     margin-right: 80px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        margin-right: 40px;
+    }
 `;
 
 export const FounderImg = styled.img`
     width: 140px;
     align-self: center;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        width: 100px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        width: 160px;
+    }
 `;
 
 export const FounderName = styled.p`
@@ -44,12 +60,28 @@ export const FounderName = styled.p`
     color: #000;
     margin-top: 15px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        font-size: 10pt;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 15pt;
+    }
 `;
 
 export const FounderRole = styled.p`
     font-size: 8pt;
     font-family: 'PalosecoLight';
     color: #000;
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        font-size: 6pt;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 10pt;
+    }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -57,6 +89,18 @@ export const DescriptionContainer = styled.div`
     margin-top: 10px;
     border-top: 2px solid #8a00ff;
     border-bottom: 1px solid purple;
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        width: 100px;
+    }
+
+    @media screen and (min-width: 951px) and (max-width: 1349px) {
+        width: 150px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        width: 200px;
+    }
 `;
 
 export const Description = styled.p`
@@ -66,19 +110,78 @@ export const Description = styled.p`
     font-family: 'LTAmberLight';
     text-align: justify;
     text-align-last: center;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        font-size: 7.5pt;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 11pt;
+    }
 `;
 
 export const InterestImg = styled.img`
     width: 90px;
     margin-top: 20px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        width: 60px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        width: 100px;
+    }
+`;
+
+export const DeonInterest = styled.img`
+    height: 90px;
+    width: 60px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        width: 40px;
+        height: 70px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        height: 100px;
+        width: 70px;
+    }
+`;
+
+export const ShanonInterest = styled.img`
+    width: 120px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        width: 80px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        width: 130px;
+    }
+`;
+
+export const JinhongInterest = styled.img`
+    width: 60px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        width: 50px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        width: 80px;
+    }
 `;
 
 export const QuoteOpening = styled(RiDoubleQuotesL)`
     width: 8px;
-    display: block;
-    margin-left: 12px;
-    margin-bottom: -20px;
-    margin-top: -5px;
+    margin-right: 1px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        width: 6px;
+    }
 `;
 
 export const QuoteClosing = styled(RiDoubleQuotesR)`
@@ -94,6 +197,14 @@ export const InterestDescription = styled.p`
     letter-spacing: 1.5px;
     margin-top: 10px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 769px) and (max-width: 1350px) {
+        font-size: 6pt;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 9pt;
+    }
 `;
 
 export const SocialContainer = styled.div`
@@ -103,10 +214,24 @@ export const SocialContainer = styled.div`
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     /* border-top: 1px solid #8a00ff; */
 `;
 
 export const SocialImg = styled.img`
     width: 20px;
     margin-top: 25px;
+
+    @media screen and (min-width: 1441px) {
+        width: 25px;
+    }
+`;
+
+export const LinkedInIcon = styled.img`
+    width: 16px;
+    margin-top: 25px;
+
+    @media screen and (min-width: 1441px) {
+        width: 20px;
+    }
 `;

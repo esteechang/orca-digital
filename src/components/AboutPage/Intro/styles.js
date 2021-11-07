@@ -32,6 +32,16 @@ export const Title = styled.h1`
     margin-right: 30px;
     align-self: flex-start;
     margin-bottom: 145px;
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        font-size: 40pt;
+        margin-bottom: 180px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 75pt;
+        margin-bottom: 130px;
+    }
 `;
 
 export const DividerContainer = styled.div`
@@ -44,6 +54,11 @@ export const ThickLine = styled.div`
     background-color: #fff;
     height: 225px;
     margin-top: 210px;
+
+    @media screen and (min-width: 1441px) {
+        height: 285px;
+        margin-top: 330px;
+    }
 `;
 
 export const ThinLine = styled.div`
@@ -52,6 +67,10 @@ export const ThinLine = styled.div`
     height: 215px;
     margin-left: 2px;
     opacity: 0.5;
+
+    @media screen and (min-width: 1441px) {
+        height: 275px;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -61,4 +80,16 @@ export const Subtitle = styled.p`
     width: 550px;
     text-align: justify;
     margin-top: 80px;
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        font-size: 12pt;
+        width: 450px;
+        margin-top: 120px;
+    }
+
+    @media screen and (min-width: 1441px) {
+        font-size: 18pt;
+        width: 620px;
+        margin-top: 170px;
+    }
 `;

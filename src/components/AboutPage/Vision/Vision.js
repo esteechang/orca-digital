@@ -6,8 +6,10 @@ import {
     Title,
     Button,
     SmallText,
+    ThickLine,
+    ThinLine,
 } from './styles';
-import { DividerContainer, ThickLine, ThinLine } from '../Intro/styles';
+
 import { Fade } from 'react-awesome-reveal';
 import ContactModal from '../../ContactModal';
 
@@ -23,11 +25,8 @@ const Vision = () => {
                     <Title>VISION</Title>
                 </Fade>
                 <Fade direction="down" duration={1500} triggerOnce>
-                    <DividerContainer style={{ marginTop: 8 }}>
-                        <ThinLine style={{ height: 210 }} />
-                        <ThickLine style={{ marginTop: -90, height: 250 }} />
-                        <ThinLine />
-                    </DividerContainer>
+                    <ThinLine />
+                    <ThickLine />
                 </Fade>
                 <Fade
                     direction="right"

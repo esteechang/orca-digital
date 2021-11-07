@@ -1,20 +1,16 @@
 import React from 'react';
-import { Container, Subtitle, Title } from './styles';
-import { DividerContainer, ThickLine, ThinLine } from '../Intro/styles';
+import { Container, Subtitle, Title, ThinLineTop, ThickLine } from './styles';
 import { Fade } from 'react-awesome-reveal';
 
 const Mission = () => {
     return (
         <Container>
             <Fade direction="left" delay={1000} duration={1500} triggerOnce>
-                <Title >MISSION</Title>
+                <Title>MISSION</Title>
             </Fade>
             <Fade direction="down" duration={1500} triggerOnce>
-                <DividerContainer>
-                    <ThinLine style={{}} />
-                    <ThickLine style={{ marginTop: -20, height: 300 }} />
-                    <ThinLine />
-                </DividerContainer>
+                <ThinLineTop />
+                <ThickLine />
             </Fade>
             <Fade direction="right" delay={1500} duration={2000} triggerOnce>
                 <Subtitle>

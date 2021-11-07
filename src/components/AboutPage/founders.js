@@ -35,7 +35,6 @@ import RHI from '../../assets/images/about/rh-interest.png';
 import DI from '../../assets/images/about/deon-interest.png';
 import SI from '../../assets/images/about/shanon-interest.png';
 
-import { IoIosArrowForward } from 'react-icons/io';
 
 const founders = [
     {

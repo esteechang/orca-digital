@@ -2,6 +2,7 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import {
     Container,
+    DeonInterest,
     Description,
     DescriptionContainer,
     Founder,
@@ -11,8 +12,11 @@ import {
     FoundersContainer,
     InterestDescription,
     InterestImg,
+    JinhongInterest,
+    LinkedInIcon,
     QuoteClosing,
     QuoteOpening,
+    ShanonInterest,
     SocialContainer,
     SocialImg,
     Title,
@@ -29,20 +33,20 @@ const About = () => {
             <Fade delay={1000} duration={2000} direction="down" triggerOnce>
                 <FoundersContainer>
                     {/* JJ */}
-                    <Founder style={{ marginTop: 30 , marginLeft: 60}}>
+                    <Founder style={{ marginTop: 30, marginLeft: 60 }}>
                         <FounderImg src={founders[0].picture} />
                         <FounderName>{founders[0].name}</FounderName>
                         <FounderRole>{founders[0].designation}</FounderRole>
                         <DescriptionContainer>
                             <Description>{founders[0].description}</Description>
                             <InterestImg src={founders[0].interest} />
-                            <QuoteOpening style={{ marginLeft: 28 }} />
                             <InterestDescription>
+                                <QuoteOpening />
                                 NICO ROSBERG <br /> FOR THE WIN.{' '}
                                 <QuoteClosing />
                             </InterestDescription>
                         </DescriptionContainer>
-                        <SocialContainer  style={{ marginTop: 58 }}>
+                        <SocialContainer>
                             <a href="mailto:leowjianjie@orcadigital.online">
                                 <SocialImg src={founders[0].email} />
                             </a>
@@ -51,10 +55,7 @@ const About = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <SocialImg
-                                    src={founders[0].linkedIn}
-                                    style={{ width: 16 }}
-                                />
+                                <LinkedInIcon src={founders[0].linkedIn} />
                             </a>
                             <SocialImg
                                 src={founders[0].linkTree}
@@ -75,20 +76,14 @@ const About = () => {
                             }}
                         >
                             <Description>{founders[1].description}</Description>
-                            <InterestImg
-                                src={founders[1].interest}
-                                style={{
-                                    height: 90,
-                                    width: 60,
-                                }}
-                            />
-                            <QuoteOpening style={{ marginLeft: 50 }} />
+                            <DeonInterest src={founders[1].interest} />
                             <InterestDescription>
+                                <QuoteOpening />
                                 MAMBA <br /> MENTALITY. <br /> KOBE FOREVER.{' '}
                                 <QuoteClosing />
                             </InterestDescription>
                         </DescriptionContainer>
-                        <SocialContainer style={{ marginTop: 40 }}>
+                        <SocialContainer>
                             <a href="mailto:deonquek@orcadigital.online">
                                 <SocialImg src={founders[1].email} />
                             </a>
@@ -97,10 +92,7 @@ const About = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <SocialImg
-                                    src={founders[1].linkedIn}
-                                    style={{ width: 16 }}
-                                />
+                                <LinkedInIcon src={founders[1].linkedIn} />
                             </a>
                             <SocialImg
                                 src={founders[1].linkTree}
@@ -120,15 +112,10 @@ const About = () => {
                                 borderBottom: '1px solid blue',
                             }}
                         >
-                            <Description >
-                                {founders[2].description}
-                            </Description>
-                            <InterestImg
-                                src={founders[2].interest}
-                                style={{ width: 120 }}
-                            />
-                            <QuoteOpening style={{ marginLeft: 20 }} />
+                            <Description>{founders[2].description}</Description>
+                            <ShanonInterest src={founders[2].interest} />
                             <InterestDescription>
+                                <QuoteOpening />
                                 HARDWORK AND <br /> DEDICATION. <QuoteClosing />
                             </InterestDescription>
                         </DescriptionContainer>
@@ -141,10 +128,7 @@ const About = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <SocialImg
-                                    src={founders[2].linkedIn}
-                                    style={{ width: 16 }}
-                                />
+                                <LinkedInIcon src={founders[2].linkedIn} />
                             </a>
                             <a
                                 href="https://linktr.ee/shanontang"
@@ -165,29 +149,18 @@ const About = () => {
                             style={{
                                 borderTop: '2px solid maroon',
                                 borderBottom: '1px solid maroon',
+                                marginLeft: 10
                             }}
                         >
-                            <Description>
-                                {founders[3].description}
-                            </Description>
-                            <InterestImg
-                                src={founders[3].interest}
-                                style={{
-                                    width: 60,
-                                }}
-                            />
+                            <Description>{founders[3].description}</Description>
+                            <JinhongInterest src={founders[3].interest} />
                             <InterestDescription>
-                                <QuoteOpening
-                                    style={{
-                                        marginBottom: -10,
-                                        marginLeft: 23,
-                                    }}
-                                />
+                                <QuoteOpening />
                                 KNOCK KNOCK
                                 <QuoteClosing style={{ marginLeft: 2 }} />
                             </InterestDescription>
                         </DescriptionContainer>
-                        <SocialContainer  style={{ marginTop: 45 }}>
+                        <SocialContainer>
                             <a href="mailto:jinhong@orcadigital.online">
                                 <SocialImg src={founders[3].email} />
                             </a>
@@ -196,10 +169,7 @@ const About = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <SocialImg
-                                    src={founders[3].linkedIn}
-                                    style={{ width: 16 }}
-                                />
+                                <LinkedInIcon src={founders[3].linkedIn} />
                             </a>
                             <a
                                 href="https://linktr.ee/phangjinhong"
@@ -225,17 +195,12 @@ const About = () => {
                             <Description>{founders[4].description}</Description>
                             <InterestImg src={founders[4].interest} />
                             <InterestDescription>
-                                <QuoteOpening
-                                    style={{
-                                        marginBottom: -10,
-                                        marginLeft: 32,
-                                    }}
-                                />
+                                <QuoteOpening />
                                 MANLY TOYS
                                 <QuoteClosing style={{ marginLeft: 1 }} />
                             </InterestDescription>
                         </DescriptionContainer>
-                        <SocialContainer  style={{ marginTop: 35 }}>
+                        <SocialContainer>
                             <a href="mailto:tohrenhe@orcadigital.online">
                                 <SocialImg src={founders[4].email} />
                             </a>
@@ -244,10 +209,7 @@ const About = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <SocialImg
-                                    src={founders[4].linkedIn}
-                                    style={{ width: 16 }}
-                                />
+                                <LinkedInIcon src={founders[4].linkedIn} />
                             </a>
                             <a
                                 href="https://linktr.ee/tohrenhe"

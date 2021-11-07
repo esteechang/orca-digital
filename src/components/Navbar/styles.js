@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link as LinkRoute } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
 
 export const Nav = styled.nav`

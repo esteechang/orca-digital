@@ -9,8 +9,10 @@ import {
     IconsContainer,
     Subtitle,
     Title,
+    ThinLineTop,
+    ThickLine,
+    MakingWavesIcon,
 } from './styles';
-import { DividerContainer, ThickLine, ThinLine } from '../Intro/styles';
 
 import icons from '../../../icons';
 
@@ -21,11 +23,8 @@ const Focus = () => {
                 <Title>FOCUS</Title>
             </Fade>
             <Fade direction="down" duration={1500} triggerOnce>
-                <DividerContainer>
-                    <ThinLine style={{ height: 272 }} />
-                    <ThickLine style={{ marginTop: -60, height: 370 }} />
-                    <ThinLine style={{ height: 165 }} />
-                </DividerContainer>
+                <ThinLineTop />
+                <ThickLine />
             </Fade>
             <Fade delay={2000} duration={2500} triggerOnce>
                 <IconsContainer>
@@ -54,10 +53,7 @@ const Focus = () => {
                     </Column>
                     <Column>
                         <ElementContainer style={{ marginBottom: 50 }}>
-                            <Icon
-                                src={icons[16]}
-                                style={{ width: 40, marginLeft: 65 }}
-                            />
+                            <MakingWavesIcon src={icons[16]} />
                             <Subtitle>Making Waves</Subtitle>
                         </ElementContainer>
                         <ElementContainer>
