@@ -24,8 +24,10 @@ const Vision = () => {
                 <Fade direction="left" delay={1000} duration={1500} triggerOnce>
                     <Title>VISION</Title>
                 </Fade>
-                <Fade direction="down" duration={1500} triggerOnce>
+                <Fade direction="down" duration={4500} delay={1000} triggerOnce>
                     <ThinLine />
+                </Fade>
+                <Fade duration={3000} delay={2000} triggerOnce>
                     <ThickLine />
                 </Fade>
                 <Fade

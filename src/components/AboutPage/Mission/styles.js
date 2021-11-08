@@ -42,20 +42,18 @@ export const Subtitle = styled.p`
     @media screen and (min-width: 1441px) {
         font-size: 18pt;
         width: 680px;
-        margin-right: 1px;
+        margin-right: 35px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 950px) {
         font-size: 12pt;
         width: 450px;
-        /* margin-top: 120px; */
         margin-right: 20px;
     }
 
     @media screen and (min-width: 951px) and (max-width: 1067px) {
         font-size: 13pt;
         width: 460px;
-        /* margin-top: 120px; */
         margin-right: 0px;
     }
 `;
@@ -65,13 +63,14 @@ export const ThickLine = styled.div`
     background-color: #fff;
     height: 370px;
 
-    position: fixed;
-    bottom: -195px;
-    right: -3px;
+    position: relative;
+    bottom: -10px;
+    right: 3px;
+    z-index: 1;
 
     @media screen and (min-width: 1441px) {
-        /* height: 380px;
-        margin-top: 0px; */
+        height: 400px;
+        bottom: -18px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 950px) {
@@ -86,11 +85,10 @@ export const ThinLineTop = styled.div`
     height: 100vh;
     opacity: 0.5;
 
-    position: fixed;
+    /* position: fixed; */
     bottom: -365px;
-
+    margin-left: 5px;
     @media screen and (min-width: 1441px) {
-        /* height: 320px; */
-        margin-bottom: 0;
+        bottom: -490px;
     }
 `;

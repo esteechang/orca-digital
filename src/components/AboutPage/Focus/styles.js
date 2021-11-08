@@ -27,7 +27,6 @@ export const Title = styled.h1`
 
     @media screen and (min-width: 769px) and (max-width: 1067px) {
         font-size: 40pt;
-        /* margin-left: -25px; */
     }
 `;
 
@@ -37,6 +36,10 @@ export const Subtitle = styled.p`
     color: #fbbd14;
     margin-top: 12px;
     text-align: center;
+
+    @media screen and (min-width: 1441px) {
+        font-size: 19pt;
+    }
 `;
 
 export const IconsContainer = styled.div`
@@ -48,12 +51,12 @@ export const IconsContainer = styled.div`
 
     @media screen and (min-width: 1441px) {
         width: 680px;
-        margin-right: -55px;
+        margin-right: -27px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 1067px) {
         width: 600px;
-        margin-right: -135px;
+        margin-right: -137px;
     }
 `;
 
@@ -82,6 +85,10 @@ export const Icon = styled.img`
         margin-right: 40px;
         margin-left: 40px;
     }
+
+    @media screen and (min-width: 1441px) {
+        height: 55pt;
+    }
 `;
 
 export const MakingWavesIcon = styled.img`
@@ -94,6 +101,11 @@ export const MakingWavesIcon = styled.img`
         width: 30px;
         margin-left: 55px;
     }
+
+    @media screen and (min-width: 1441px) {
+        height: 55pt;
+        width: 45px;
+    }
 `;
 
 export const ThickLine = styled.div`
@@ -101,18 +113,19 @@ export const ThickLine = styled.div`
     background-color: #fff;
     height: 370px;
 
-    position: fixed;
-    bottom: -210px;
-    right: -3px;
+    position: relative;
+    bottom: -25px;
+    right: 3px;
 
     @media screen and (min-width: 1441px) {
-        /* height: 380px;
-        margin-top: 0px; */
+        height: 400px;
+        bottom: -35px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 950px) {
         height: 340px;
-        bottom: -198px;
+        bottom: -28px;
+        right: 6px;
     }
 `;
 
@@ -122,11 +135,15 @@ export const ThinLineTop = styled.div`
     height: 100vh;
     opacity: 0.5;
 
-    position: fixed;
     bottom: -365px;
+    margin-left: 5px;
 
     @media screen and (min-width: 1441px) {
-        /* height: 320px;
-        margin-bottom: 0; */
+        bottom: -487px;
+        margin-left: 7px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 950px) {
+        margin-left: -4px;
     }
 `;

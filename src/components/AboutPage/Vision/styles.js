@@ -17,7 +17,11 @@ export const ContentContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 280px;
+    margin-top: 0px;
+
+    @media screen and (min-width: 1441px) {
+        margin-left: 2px;
+    }
 `;
 
 export const Title = styled.h1`
@@ -55,11 +59,11 @@ export const Subtitle = styled.p`
         margin-right: -21px;
     }
 
-    /* @media screen and (min-width: 1441px) {
+    @media screen and (min-width: 1441px) {
         font-size: 18pt;
-        width: 620px;
-        margin-top: 170px;
-    } */
+        width: 680px;
+        margin-right: -50px;
+    }
 `;
 
 export const Button = styled.button`
@@ -77,13 +81,17 @@ export const Button = styled.button`
     align-items: center;
     transition: all 0.2s ease-in-out;
     border: none;
-    margin-top: 120px;
+
     margin-right: 250px;
 
     &:hover {
         transition: all 0.2s ease-in-out;
         background-color: #fff;
         color: #000;
+    }
+
+    @media screen and (min-width: 1441px) {
+        margin-right: 290px;
     }
 `;
 
@@ -93,6 +101,10 @@ export const SmallText = styled.p`
     color: #fbbd14;
     margin-top: -35px;
     margin-left: 180px;
+
+    @media screen and (min-width: 1441px) {
+        margin-left: 130px;
+    }
 `;
 
 export const ThickLine = styled.div`
@@ -100,18 +112,17 @@ export const ThickLine = styled.div`
     background-color: #fff;
     height: 125px;
 
-    position: fixed;
-    bottom: -82px;
-    right: -3px;
+    position: relative;
+    bottom: -18px;
+    right: 3px;
 
     @media screen and (min-width: 1441px) {
-        /* height: 380px;
-        margin-top: 0px; */
+        height: 130px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 1067px) {
         height: 100px;
-        bottom: -75px;
+        bottom: -25px;
     }
 `;
 
@@ -121,11 +132,12 @@ export const ThinLine = styled.div`
     height: 80vh;
     opacity: 0.5;
 
-    position: fixed;
-    bottom: -215px;
+    /* position: fixed; */
+    /* bottom: 20px; */
+    margin-left: 5px;
 
     @media screen and (min-width: 1441px) {
-        /* height: 320px; */
-        margin-bottom: 0;
+        bottom: -362px;
+        height: 75vh;
     }
 `;

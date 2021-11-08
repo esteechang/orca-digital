@@ -19,14 +19,16 @@ import icons from '../../../icons';
 const Focus = () => {
     return (
         <Container>
-            <Fade direction="left" delay={1000} duration={2000} triggerOnce>
+            <Fade direction="left" delay={1500} duration={3000} triggerOnce>
                 <Title>FOCUS</Title>
             </Fade>
-            <Fade direction="down" duration={1500} triggerOnce>
+            <Fade direction="down" duration={4500} delay={1000} triggerOnce>
                 <ThinLineTop />
+            </Fade>
+            <Fade duration={3000} delay={2000} triggerOnce>
                 <ThickLine />
             </Fade>
-            <Fade delay={2000} duration={2500} triggerOnce>
+            <Fade delay={3500} duration={2500} triggerOnce>
                 <IconsContainer>
                     <Column>
                         <ElementContainer style={{ marginBottom: 50 }}>
