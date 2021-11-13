@@ -41,7 +41,7 @@
 .box::after {
     content: '';
     position: absolute;
-    inset: 4px;
+    inset: 1px;
     background: #000;
     border-radius: 50%;
 }

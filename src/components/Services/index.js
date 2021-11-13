@@ -47,12 +47,11 @@ const Services = () => {
                     </Button>
                 </Fade>
             </Container>
+
             {showMoreServices ? (
-                <Fade direction="down" duration={2000} triggerOnce>
-                    <MoreServicesContainer>
-                        <MoreServices />
-                    </MoreServicesContainer>
-                </Fade>
+                <MoreServicesContainer>
+                    <MoreServices />
+                </MoreServicesContainer>
             ) : (
                 ''
             )}

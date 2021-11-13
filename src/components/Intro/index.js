@@ -22,7 +22,7 @@ const Intro = () => {
                     <WhiteTitle>BUSINESSES</WhiteTitle>
                 </TitleContainer>
             </Fade>
-            <Fade direction="left" duration={2500}  triggerOnce>
+            <Fade direction="right" duration={2500}  triggerOnce>
                 <WhiteTitleForBusiness> BUSINESSES</WhiteTitleForBusiness>
             </Fade>
             <SubtitleContainer>

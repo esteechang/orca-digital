@@ -63,7 +63,7 @@ export const Icon = styled.img`
 
 export const IconText = styled.p`
     color: #000;
-    font-family: 'LTAmberRegular';
+    font-family: 'LTAmberLight';
     font-size: 20pt;
     margin-top: 5px;
 

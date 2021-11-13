@@ -19,7 +19,6 @@ import {
     DividerPhone,
     SubtitleContainer,
     SubtitlePhone,
-    
 } from './styles';
 import ContactModal from '../ContactModal';
 
@@ -31,16 +30,16 @@ const ContactPage = () => {
     return (
         <Container id="contact">
             <SmallText>So now,</SmallText>
-            <Fade direction="left" duration={2000} delay={1500} triggerOnce>
-                <TitleContainer>
-                    <WhiteTitle>LETS</WhiteTitle>
-                    <WhiteTitle>CREATE</WhiteTitle>
-                    <WhiteTitleForPhone>LETS CREATE</WhiteTitleForPhone>
-                    <Title>WAVES.</Title>
+            <TitleContainer>
+                <WhiteTitle>LETS</WhiteTitle>
+                <WhiteTitle>CREATE</WhiteTitle>
+                <WhiteTitleForPhone>LETS CREATE</WhiteTitleForPhone>
+                <Title>WAVES.</Title>
+                <Fade  duration={2000} triggerOnce>
                     <Title>TOGETHER.</Title>
-                    <DividerPhone />
-                </TitleContainer>
-            </Fade>
+                </Fade>
+                <DividerPhone />
+            </TitleContainer>
 
             <SubtitleContainer>
                 {/* <Fade direction="up" delay={1000} triggerOnce> */}
@@ -69,7 +68,7 @@ const ContactPage = () => {
                 direction="right"
                 delay={2000}
                 duration={2000}
-                style={{ marginTop: 30 }}
+                style={{ marginTop: 60 }}
                 triggerOnce
             >
                 <Subtitle>

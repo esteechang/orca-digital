@@ -30,7 +30,7 @@ const About = () => {
             <Fade duration={1500} triggerOnce>
                 <Title>THE ORCA POD</Title>
             </Fade>
-            <Fade delay={1000} duration={2000} direction="down" triggerOnce>
+            <Fade delay={1000} duration={2000} triggerOnce>
                 <FoundersContainer>
                     {/* JJ */}
                     <Founder style={{ marginTop: 30, marginLeft: 60 }}>
@@ -41,7 +41,7 @@ const About = () => {
                             <Description>{founders[0].description}</Description>
                             <InterestImg src={founders[0].interest} />
                             <InterestDescription>
-                                <QuoteOpening />
+                                <QuoteOpening /> 
                                 NICO ROSBERG <br /> FOR THE WIN.{' '}
                                 <QuoteClosing />
                             </InterestDescription>
@@ -149,7 +149,7 @@ const About = () => {
                             style={{
                                 borderTop: '2px solid maroon',
                                 borderBottom: '1px solid maroon',
-                                marginLeft: 10
+                                marginLeft: 10,
                             }}
                         >
                             <Description>{founders[3].description}</Description>

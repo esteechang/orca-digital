@@ -52,9 +52,9 @@ export const DividerContainer = styled.div`
 export const ThickLine = styled.div`
     width: 5px;
     background-color: #fff;
-    height: 225px;
-    margin-top: 210px;
+    position: relative;
 
+    height: 225px;
     @media screen and (min-width: 1441px) {
         height: 285px;
         margin-top: 330px;
@@ -64,7 +64,12 @@ export const ThickLine = styled.div`
 export const ThinLine = styled.div`
     width: 1px;
     background-color: #fff;
-    height: 215px;
+    height: 60vh;
+
+    position: absolute;
+    bottom: 0;
+    /* margin-top: 195px; */
+
     margin-left: 2px;
     opacity: 0.5;
 

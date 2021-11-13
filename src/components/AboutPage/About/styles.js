@@ -18,7 +18,7 @@ export const Title = styled.h1`
     font-size: 65pt;
     font-family: 'PalosecoMedium';
     color: #000;
-
+    margin-top: 20px;
     @media screen and (min-width: 1441px) {
         font-size: 75pt;
         margin-bottom: 40px;
@@ -106,7 +106,7 @@ export const DescriptionContainer = styled.div`
 export const Description = styled.p`
     color: #000;
     font-size: 9pt;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: 'LTAmberLight';
     text-align: justify;
     text-align-last: center;
@@ -122,7 +122,7 @@ export const Description = styled.p`
 
 export const InterestImg = styled.img`
     width: 90px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     @media screen and (min-width: 769px) and (max-width: 1350px) {
         width: 60px;
@@ -136,7 +136,7 @@ export const InterestImg = styled.img`
 export const DeonInterest = styled.img`
     height: 90px;
     width: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     @media screen and (min-width: 769px) and (max-width: 1350px) {
         width: 40px;
@@ -151,7 +151,7 @@ export const DeonInterest = styled.img`
 
 export const ShanonInterest = styled.img`
     width: 120px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     @media screen and (min-width: 769px) and (max-width: 1350px) {
         width: 80px;
@@ -196,7 +196,7 @@ export const InterestDescription = styled.p`
     font-size: 8pt;
     letter-spacing: 1.5px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     @media screen and (min-width: 769px) and (max-width: 1350px) {
         font-size: 6pt;
@@ -220,7 +220,7 @@ export const SocialContainer = styled.div`
 
 export const SocialImg = styled.img`
     width: 20px;
-    margin-top: 25px;
+    margin-top: 15px;
 
     @media screen and (min-width: 1441px) {
         width: 25px;
@@ -229,7 +229,7 @@ export const SocialImg = styled.img`
 
 export const LinkedInIcon = styled.img`
     width: 16px;
-    margin-top: 25px;
+    margin-top: 15px;
 
     @media screen and (min-width: 1441px) {
         width: 20px;
