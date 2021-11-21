@@ -17,7 +17,7 @@ const PhoneIntro = () => {
                 duration={2000}
                 delay={1000}
                 triggerOnce
-                style={{ width: '100%', marginLeft: 150 }}
+                // style={{ width: '100%', marginLeft: 150 }}
             >
                 <Subtitle>
                     ORCA Digital was conceived when a group of Singaporean sons

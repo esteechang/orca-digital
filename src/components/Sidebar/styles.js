@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaTimes } from 'react-icons/fa';
+import { IoIosArrowBack } from 'react-icons/io';
 import { Link as LinkS } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
 
@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #fbbd14;
     display: grid;
     align-items: center;
     /* top: 0; */
@@ -18,22 +18,22 @@ export const SidebarContainer = styled.aside`
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled(IoIosArrowBack)`
     color: #fff;
 `;
 
 export const Icon = styled.div`
     position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
+    top: 2rem;
+    left: 1rem;
     background: transparent;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     outline: none; ;
 `;
 
 export const SidebarWrapper = styled.div`
-    color: #000;
+    color: #fbbd14;
 `;
 
 export const SidebarMenu = styled.ul`
@@ -57,9 +57,11 @@ export const SidebarLink = styled(LinkS)`
 
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 
+    font-family: 'MontserratMedium';
+    
     &:hover {
         color: #fbbd14;
         transition: 0.2s ease-in-out;
@@ -67,7 +69,7 @@ export const SidebarLink = styled(LinkS)`
 `;
 
 export const SidebarLinkToPage = styled(HashLink)`
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
@@ -76,11 +78,13 @@ display: flex;
 
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 
+    font-family: 'MontserratMedium';
+
     &:hover {
-        color: #fbbd14;
+        color: #fff;
         transition: 0.2s ease-in-out;
     }
-`
+`;

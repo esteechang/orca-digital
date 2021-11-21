@@ -83,7 +83,7 @@ export const Button = styled.button`
     border: none;
 
     margin-right: 250px;
-
+    margin-top: 35vh;
     &:hover {
         transition: all 0.2s ease-in-out;
         background-color: #fff;
@@ -92,6 +92,7 @@ export const Button = styled.button`
 
     @media screen and (min-width: 1441px) {
         margin-right: 290px;
+        margin-top: 38vh;
     }
 `;
 
@@ -114,10 +115,11 @@ export const ThickLine = styled.div`
 
     position: relative;
     bottom: -18px;
-    right: 3px;
+    right: 2px;
 
     @media screen and (min-width: 1441px) {
         height: 130px;
+        right: 3px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 1067px) {
@@ -126,18 +128,18 @@ export const ThickLine = styled.div`
     }
 `;
 
-export const ThinLine = styled.div`
-    width: 1px;
-    background-color: #fff;
-    height: 80vh;
-    opacity: 0.5;
+// export const ThinLine = styled.div`
+//     width: 1px;
+//     background-color: #fff;
+//     height: 80vh;
+//     opacity: 0.5;
 
-    /* position: fixed; */
-    /* bottom: 20px; */
-    margin-left: 5px;
+//     /* position: fixed; */
+//     /* bottom: 20px; */
+//     margin-left: 5px;
 
-    @media screen and (min-width: 1441px) {
-        bottom: -362px;
-        height: 75vh;
-    }
-`;
+//     @media screen and (min-width: 1441px) {
+//         bottom: -362px;
+//         height: 75vh;
+//     }
+// `;

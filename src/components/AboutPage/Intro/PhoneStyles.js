@@ -34,6 +34,8 @@ export const Subtitle = styled.p`
     width: 68%;
     margin-top: 10px;
     font-family: 'LTAmberLight';
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 export const BottomText = styled.p`

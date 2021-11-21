@@ -32,7 +32,7 @@ const About = () => {
 
     return (
         <>
-            <div style={{ backgroundColor: '#fbbd14' }}>
+            <div style={{ backgroundColor: '#fbbd14', width: '100vw' }}>
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar toggle={toggle} about />
             </div>

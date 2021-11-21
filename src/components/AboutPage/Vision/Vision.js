@@ -7,7 +7,7 @@ import {
     Button,
     SmallText,
     ThickLine,
-    ThinLine,
+    // ThinLine,
 } from './styles';
 
 import { Fade } from 'react-awesome-reveal';
@@ -24,10 +24,7 @@ const Vision = () => {
                 <Fade direction="left" delay={1000} duration={1500} triggerOnce>
                     <Title>VISION</Title>
                 </Fade>
-                <Fade direction="down" duration={4500} delay={1000} triggerOnce>
-                    <ThinLine />
-                </Fade>
-                <Fade duration={3000} delay={2000} triggerOnce>
+                <Fade duration={3000} triggerOnce>
                     <ThickLine />
                 </Fade>
                 <Fade
@@ -47,7 +44,7 @@ const Vision = () => {
                 <Button onClick={openModal}>Contact us</Button>
             </Fade>
 
-            <Fade direction="left" duration={2000} delay={4000} triggerOnce>
+            <Fade duration={2000} delay={3500} triggerOnce>
                 <SmallText>to find out even more. </SmallText>
             </Fade>
 

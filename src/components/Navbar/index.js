@@ -50,6 +50,17 @@ const Navbar = ({ toggle, about }) => {
                         <NavMenu>
                             <NavItem>
                                 {about ? (
+                                    <NavLinkToPage to="/" about>
+                                        Home
+                                    </NavLinkToPage>
+                                ) : (
+                                    <NavLinkToPage to="/" >
+                                        Home
+                                    </NavLinkToPage>
+                                )}
+                            </NavItem>
+                            <NavItem>
+                                {about ? (
                                     <NavLinkToPage to="/about-us" about>
                                         About
                                     </NavLinkToPage>
@@ -102,7 +113,7 @@ const Navbar = ({ toggle, about }) => {
                                 )}
                             </NavItem>
 
-                            <NavItem>
+                            {/* <NavItem>
                                 {about ? (
                                     <NavLinks
                                         to="careers"
@@ -127,7 +138,7 @@ const Navbar = ({ toggle, about }) => {
                                         Join Us
                                     </NavLinks>
                                 )}
-                            </NavItem>
+                            </NavItem> */}
                         </NavMenu>
                     </NavbarContainer>
                 </Nav>

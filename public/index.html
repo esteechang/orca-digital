@@ -39,6 +39,29 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         />
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-213450721-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            dataLayer.push({
+                event: 'Pageview',
+                pagePath: 'https://www.googleanalytics.dev/pancakes',
+                pageTitle: 'Pancake Event Signup',
+                visitorType: 'customer',
+            });
+            
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-213450721-1');
+        </script>
+
         <title>Orca Digital | Home</title>
     </head>
     <body>

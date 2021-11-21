@@ -9,7 +9,6 @@ import {
     IconsContainer,
     Subtitle,
     Title,
-    ThinLineTop,
     ThickLine,
     MakingWavesIcon,
 } from './styles';
@@ -23,7 +22,7 @@ const Focus = () => {
                 <Title>FOCUS</Title>
             </Fade>
             <Fade direction="down" duration={4500} delay={1000} triggerOnce>
-                <ThinLineTop />
+                {/* <ThinLineTop /> */}
             </Fade>
             <Fade duration={3000} delay={2000} triggerOnce>
                 <ThickLine />

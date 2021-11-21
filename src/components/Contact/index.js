@@ -16,7 +16,6 @@ import {
     SocialIconLink,
     SmallText,
     WhiteTitleForPhone,
-    DividerPhone,
     SubtitleContainer,
     SubtitlePhone,
 } from './styles';
@@ -35,11 +34,11 @@ const ContactPage = () => {
                 <WhiteTitle>CREATE</WhiteTitle>
                 <WhiteTitleForPhone>LETS CREATE</WhiteTitleForPhone>
                 <Title>WAVES.</Title>
-                <Fade  duration={2000} triggerOnce>
+                <Fade duration={2000} triggerOnce>
                     <Title>TOGETHER.</Title>
                 </Fade>
-                <DividerPhone />
             </TitleContainer>
+            {/* <DividerPhone /> */}
 
             <SubtitleContainer>
                 {/* <Fade direction="up" delay={1000} triggerOnce> */}
@@ -78,7 +77,7 @@ const ContactPage = () => {
                 </Subtitle>
             </Fade>
 
-            <Fade duration={2000} delay={3000} triggerOnce>
+            <Fade duration={2000} delay={2500} triggerOnce>
                 <IconsContainer>
                     <SocialIconLink href="mailto:orcadigitalsg@orcadigital.online">
                         <BsEnvelope />

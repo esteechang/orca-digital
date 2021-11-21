@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Fade } from 'react-awesome-reveal';
 
 export const Container = styled.div`
     height: 100%;
@@ -67,8 +68,7 @@ export const Title = styled.h1`
         margin-right: 45px;
     }
 
-
-    @media screen and (min-width: 769px)  and (max-width: 1200px){
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
         font-size: 57pt;
     }
 
@@ -88,7 +88,7 @@ export const WhiteTitle = styled.h1`
         margin-right: 45px;
     }
 
-    @media screen and (min-width: 769px)  and (max-width: 1200px){
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
         font-size: 57pt;
     }
 
@@ -110,12 +110,21 @@ export const MainContent = styled.div`
     }
 `;
 
+export const SubtitleFade = styled(Fade)`
+    margin-left: auto;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+    }
+`;
+
 export const SubtitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-self: flex-end;
     align-items: center;
     margin-top: 30px;
+    margin-left: auto;
 
     @media only screen and (min-width: 1441px) {
         margin-top: 50px;
@@ -128,20 +137,22 @@ export const Subtitle = styled.p`
     width: 550px;
     align-self: flex-end;
     margin-right: 120px;
+    border-left: 2px solid #fbbd14;
+    padding-left: 20px;
 
     text-align: justify;
 
     @media screen and (max-width: 768px) {
         font-size: 12pt;
-        width: 300px;
+        width: 320px;
+        margin: auto;
     }
 
-    @media screen and (min-width: 769px)  and (max-width: 1200px){
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
         font-size: 12pt;
         width: 440px;
         margin-right: 110px;
     }
-
 
     @media only screen and (min-width: 1441px) {
         font-size: 18pt;
@@ -166,27 +177,27 @@ export const BtnContainer = styled.div`
     }
 `;
 
-export const Divider = styled.div`
-    display: inline-block;
-    width: 2px;
-    background-color: #fbbd14;
+// export const Divider = styled.div`
+//     display: inline-block;
+//     width: 2px;
+//     background-color: #fbbd14;
 
-    margin-right: 20px;
-    margin-bottom: 5px;
-    height: 60px;
+//     margin-right: 20px;
+//     margin-bottom: 5px;
+//     height: 60px;
 
-    @media screen and (max-width: 768px) {
-        height: 90px;
-        margin-left: 40px;
-        margin-bottom: 5px;
-    }
-    @media screen and (min-width: 769px)  and (max-width: 1200px){
-        height: 50px;
-    }
+//     @media screen and (max-width: 768px) {
+//         /* height: 90px;
+//         margin-left: 0px;
+//         margin-bottom: 5px; */
+//         display: none;
+//     }
+//     @media screen and (min-width: 769px) and (max-width: 1200px) {
+//         height: 50px;
+//     }
 
-    
-    @media only screen and (min-width: 1441px) {
-        height: 75px;
-        margin-bottom: 5px;
-    }
-`;
+//     @media only screen and (min-width: 1441px) {
+//         height: 75px;
+//         margin-bottom: 5px;
+//     }
+// `;

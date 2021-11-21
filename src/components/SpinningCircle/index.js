@@ -13,7 +13,7 @@ const index = () => {
                     <img
                         src={OS1}
                         alt="branding icon"
-                        style={{ height: 110, width: 110 }}
+                        className="icon"
                     />
                 </div>
 
@@ -21,14 +21,14 @@ const index = () => {
                     <img
                         src={OS2}
                         alt="digital marketing icon"
-                        style={{ height: 110, width: 110 }}
+                        className="icon"
                     />
                 </div>
                 <div className="box">
                     <img
                         src={OS3}
                         alt="ideation icon"
-                        style={{ height: 110, width: 110 }}
+                        className="icon"
                     />
                 </div>
             </div>
@@ -38,7 +38,7 @@ const index = () => {
                         <img
                             src={OS2}
                             alt="branding icon"
-                            style={{ height: 100, width: 100 }}
+                            className="icon-small"
                         />
                     </div>
                     <Fade
@@ -55,7 +55,7 @@ const index = () => {
                         <img
                             src={OS3}
                             alt="ideation icon"
-                            style={{ height: 100, width: 90 }}
+                            className="icon-small"
                         />
                     </div>
 
@@ -63,11 +63,11 @@ const index = () => {
                         <img
                             src={OS1}
                             alt="branding icon"
-                            style={{ height: 90, width: 90 }}
+                            className="icon-small"
                         />
                     </div>
                 </div>
-                <Fade duration={2000} delay={1500} triggerOnce>
+                <Fade duration={2000} delay={1500} triggerOnce style={{width: '375px'}}>
                     <div className="third-row">
                         <p>IDEATION</p>
                         <p>BRANDING</p>

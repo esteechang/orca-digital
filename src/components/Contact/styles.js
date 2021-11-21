@@ -19,8 +19,8 @@ export const TitleContainer = styled.div`
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        border-bottom: 2px solid white;
     }
-
 `;
 
 export const Title = styled.h1`
@@ -32,8 +32,9 @@ export const Title = styled.h1`
     @media screen and (max-width: 900px) {
         font-size: 35pt;
         margin-right: 0px;
-        :last-of-type {
-            margin-top: 40px;
+
+        :last-child {
+            margin-top: 20px;
         }
     }
 
@@ -150,6 +151,7 @@ export const SmallText = styled.p`
     color: #fff;
     align-self: center;
     margin-top: 20px;
+    margin-bottom: 150px;
 
     @media screen and (max-width: 768px) {
         display: unset;
@@ -168,7 +170,6 @@ export const WhiteTitleForPhone = styled.h1`
     @media screen and (max-width: 900px) {
         display: unset;
         font-size: 40pt;
-        margin-right: 20px;
     }
 `;
 
@@ -176,7 +177,7 @@ export const DividerPhone = styled.div`
     display: none;
 
     width: 100%;
-    background-color: #fff;
+    background-color: red;
     height: 1px;
 
     @media screen and (max-width: 768px) {

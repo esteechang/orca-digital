@@ -1,5 +1,5 @@
-ul.progress-bar {
-    height: 250px;
+ul.progress-bar-longer {
+    height: 300px;
     list-style: none;
     position: relative;
     display: flex;
@@ -10,7 +10,7 @@ ul.progress-bar {
     /* align-self: flex-start; */
     /* margin-right: 200px; */
 }
-ul.progress-bar::after {
+ul.progress-bar-longer::after {
     content: '';
     position: absolute;
     top: 0;
@@ -20,7 +20,7 @@ ul.progress-bar::after {
     animation: lineConnectDots 6s forwards;
     /* height: 50vh; */
 }
-ul.progress-bar li {
+ul.progress-bar-longer li {
     background: #fbbd14;
     border-radius: 10px;
     width: 12px;
@@ -28,37 +28,26 @@ ul.progress-bar li {
     z-index: 1;
     position: relative;
 }
-ul.progress-bar li.stop ~ li {
+ul.progress-bar-longer li.stop ~ li {
     background: #fbbd14;
 }
 
-
-
-/* ul.progress-bar li::after {
+ul.progress-bar-longer::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 5px;
     background: #fbbd14;
-    width: 5px;
-    height: 100vh;
-} */
-
-#thinline {
     width: 1px;
-    background-color: white;
-    animation: growFullLine 8s forwards;
-    position: relative;
-    top: 0;
-    align-self: flex-start;
-    opacity: 0.5;
+    animation: longerLineConnectDots 5s forwards;
+    /* height: 50vh; */
 }
 
-@keyframes growFullLine {
+@keyframes longerLineConnectDots {
     0% {
         height: 0px;
     }
     100% {
-        height: 260vh;
+        height: 300px;
     }
 }

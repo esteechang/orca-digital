@@ -13,7 +13,7 @@ const PhoneMission = () => {
     return (
         <Container>
             <Title>MISSION</Title>
-            <Fade direction="right" duration={2000} triggerOnce>
+            <Fade duration={2000} triggerOnce>
                 <SubtextContainer>
                     <ul class="progress-bar">
                         <li></li>

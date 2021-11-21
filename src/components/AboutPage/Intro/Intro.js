@@ -1,13 +1,8 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import {
-    Container,
-    DividerContainer,
-    ThickLine,
-    Title,
-    ThinLine,
-    Subtitle,
-} from './styles';
+import { Container, ThickLine, Title, Subtitle } from './styles';
+
+import './styles.css';
 
 const Intro = () => {
     return (
@@ -15,11 +10,10 @@ const Intro = () => {
             <Fade direction="left" duration={1000} delay={1000} triggerOnce>
                 <Title>ABOUT</Title>
             </Fade>
-            <Fade duration={1500} delay={500} triggerOnce>
-                <DividerContainer>
-                    <ThickLine />
-                    <ThinLine />
-                </DividerContainer>
+
+            <Fade triggerOnce  duration={1000}>
+                <div className="here"></div>
+                <ThickLine />
             </Fade>
             <Fade direction="right" duration={2000} delay={1500} triggerOnce>
                 <Subtitle>

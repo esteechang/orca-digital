@@ -82,12 +82,14 @@ export const ThickLine = styled.div`
 export const ThinLineTop = styled.div`
     width: 1px;
     background-color: #fff;
-    height: 100vh;
+    height: 250vh;
     opacity: 0.5;
 
-    /* position: fixed; */
-    bottom: -365px;
-    margin-left: 5px;
+    /* position: absolute; */
+    /* bottom: -365px; */
+    margin-top: 1050px;
+    margin-left: -1px;
+
     @media screen and (min-width: 1441px) {
         bottom: -490px;
     }

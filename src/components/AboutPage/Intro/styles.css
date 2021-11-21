@@ -1,0 +1,21 @@
+.here:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid white;
+    opacity: 0.5;
+    transform: translate(-50%);
+    margin-top: 40vh;
+    height: 61%;
+    left: 41%;
+    
+}
+@media screen and (min-width: 1441px) {
+    .here:after {
+        left: 42.5%;
+        height: 58.5%;
+        margin-top: 21%;
+    }
+}

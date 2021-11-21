@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar/';
 import { Button } from '../Button/ButtonElement';
@@ -10,9 +10,9 @@ import {
     WhiteTitle,
     Subtitle,
     BtnContainer,
-    Divider,
     SubtitleContainer,
     TitleContainer,
+    SubtitleFade,
 } from './styles';
 
 import { Fade } from 'react-awesome-reveal';
@@ -40,22 +40,17 @@ const Main = () => {
                     <MainContent>
                         <Fade direction={'left'} duration={2000} triggerOnce>
                             <TitleContainer>
-                                <Title>MARKETING </Title>{' '}
-                                <Title>MADE</Title>
+                                <Title>MARKETING </Title> <Title>MADE</Title>
                                 <WhiteTitle> EASY.</WhiteTitle>
                             </TitleContainer>
                         </Fade>
-                        <Fade
+                        <SubtitleFade
                             direction={'right'}
                             duration={2000}
                             delay={1000}
                             triggerOnce
-                            style={{
-                                marginLeft: 'auto',
-                            }}
                         >
                             <SubtitleContainer>
-                                <Divider />
                                 <Subtitle>
                                     Hunting in a competitive market can mean
                                     lots of man hours. We have prepared for just
@@ -64,7 +59,7 @@ const Main = () => {
                                     your journey to success.
                                 </Subtitle>
                             </SubtitleContainer>
-                        </Fade>
+                        </SubtitleFade>
                         <Fade
                             duration={2000}
                             delay={3000}

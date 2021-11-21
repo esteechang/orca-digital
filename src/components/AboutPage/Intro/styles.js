@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const BackToTopArrow = styled(IoIosArrowUp)`
     color: #fff;
     position: fixed;
-    z-index: 999;
+    z-index: 0;
     right: 0;
     margin-right: 50px;
     width: 60px;
@@ -47,32 +47,36 @@ export const Title = styled.h1`
 export const DividerContainer = styled.div`
     display: flex;
     flex-direction: column;
+    position: relative;
 `;
 
 export const ThickLine = styled.div`
     width: 5px;
     background-color: #fff;
-    position: relative;
-
+    position: absolute;
+    top: 40%;
     height: 225px;
+    right: 58.8%;
     @media screen and (min-width: 1441px) {
-        height: 285px;
-        margin-top: 330px;
+        height: 300px;
+        /* margin-top: 330px; */
+        right: 57.3%;
+        top: 42.5%;
     }
 `;
 
 export const ThinLine = styled.div`
     width: 1px;
     background-color: #fff;
-    height: 60vh;
+    height: 200px;
 
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    /* top: 2px; */
     /* margin-top: 195px; */
-
+    /* margin-top: auto; */
     margin-left: 2px;
     opacity: 0.5;
-
+    margin-bottom: 0px;
     @media screen and (min-width: 1441px) {
         height: 275px;
     }

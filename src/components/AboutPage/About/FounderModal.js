@@ -55,7 +55,6 @@ const FounderModal = ({
         (e) => {
             if (e.key === 'Escape' && showJJModal) {
                 setShowJJModal(false);
-                // <HashLink to="us" />
             }
             if (e.key === 'Escape' && showDModal) {
                 setShowDModal(false);
@@ -111,13 +110,11 @@ const FounderModal = ({
                                         <InterestImg
                                             src={founders[0].interest}
                                         />
-                                        <InterestDescription
-                                            style={{ fontSize: 10 }}
-                                        >
+                                        <InterestDescription>
                                             <QuoteOpening /> NICO ROSBERG
                                         </InterestDescription>
                                         <InterestDescription
-                                            style={{ fontSize: 10 }}
+                                            style={{ marginLeft: 6 }}
                                         >
                                             FOR THE WIN.
                                             <QuoteClosing />
@@ -211,25 +208,18 @@ const FounderModal = ({
                                     <InterestImg
                                         src={founders[1].interest}
                                         style={{
-                                            height: 90,
-                                            width: 60,
-                                            marginTop: 0,
-                                            marginLeft: 120,
+                                            width: 70,
+                                            marginTop: 10,
+                                            marginLeft: 110,
                                         }}
                                     />
-                                    <InterestDescription
-                                        style={{ fontSize: 10 }}
-                                    >
+                                    <InterestDescription>
                                         <QuoteOpening /> MAMBA
                                     </InterestDescription>
-                                    <InterestDescription
-                                        style={{ fontSize: 10 }}
-                                    >
+                                    <InterestDescription>
                                         MENTALITY.
                                     </InterestDescription>
-                                    <InterestDescription
-                                        style={{ fontSize: 10 }}
-                                    >
+                                    <InterestDescription>
                                         KOBE FOREVER.
                                         <QuoteClosing />
                                     </InterestDescription>
@@ -315,20 +305,15 @@ const FounderModal = ({
                                     <InterestImg
                                         src={founders[2].interest}
                                         style={{
-                                            width: 130,
-                                            marginTop: 10,
-                                            marginLeft: 80,
+                                            width: 150,
+                                            marginLeft: 70,
                                         }}
                                     />
-                                    <InterestDescription
-                                        style={{ fontSize: 10 }}
-                                    >
+                                    <InterestDescription>
                                         <QuoteOpening /> HARDWORK AND
                                     </InterestDescription>
 
-                                    <InterestDescription
-                                        style={{ fontSize: 10 }}
-                                    >
+                                    <InterestDescription>
                                         DEDICATION.
                                         <QuoteClosing />
                                     </InterestDescription>
@@ -424,7 +409,7 @@ const FounderModal = ({
                                         }}
                                     />
                                     <InterestDescription
-                                        style={{ marginLeft: 25, fontSize: 10 }}
+                                        style={{ marginLeft: 25 }}
                                     >
                                         <QuoteOpening /> MANLY TOYS{' '}
                                         <QuoteClosing />
@@ -517,13 +502,12 @@ const FounderModal = ({
                                     <InterestImg
                                         src={founders[3].interest}
                                         style={{
-                                            width: 80,
-                                            marginTop: 10,
-                                            marginLeft: 110,
+                                            width: 100,
+                                            marginTop: 20,
                                         }}
                                     />
                                     <InterestDescription
-                                        style={{ marginLeft: 15, fontSize: 10 }}
+                                        style={{ marginLeft: 15 }}
                                     >
                                         <QuoteOpening /> KNOCK KNOCK{' '}
                                         <QuoteClosing />

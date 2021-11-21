@@ -77,9 +77,10 @@ export const Description = styled.p`
 `;
 
 export const InterestImg = styled.img`
-    width: 100px;
+    width: 120px;
     margin-left: 100px;
     margin-top: 20px;
+    margin-bottom: 5px;
 `;
 
 export const QuoteOpening = styled(RiDoubleQuotesL)`
@@ -107,6 +108,7 @@ export const SocialContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-left: 50px;
+    margin-top: 10px;
     /* border-top: 1px solid #8a00ff; */
 `;
 

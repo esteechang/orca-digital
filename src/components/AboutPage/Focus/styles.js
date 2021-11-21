@@ -115,7 +115,7 @@ export const ThickLine = styled.div`
 
     position: relative;
     bottom: -25px;
-    right: 3px;
+    right: 2px;
 
     @media screen and (min-width: 1441px) {
         height: 400px;
@@ -129,21 +129,21 @@ export const ThickLine = styled.div`
     }
 `;
 
-export const ThinLineTop = styled.div`
-    width: 1px;
-    background-color: #fff;
-    height: 100vh;
-    opacity: 0.5;
+// export const ThinLineTop = styled.div`
+//     width: 1px;
+//     background-color: #fff;
+//     height: 100vh;
+//     opacity: 0.5;
 
-    bottom: -365px;
-    margin-left: 5px;
+//     bottom: -365px;
+//     margin-left: 5px;
 
-    @media screen and (min-width: 1441px) {
-        bottom: -487px;
-        margin-left: 7px;
-    }
+//     @media screen and (min-width: 1441px) {
+//         bottom: -487px;
+//         margin-left: 7px;
+//     }
 
-    @media screen and (min-width: 769px) and (max-width: 950px) {
-        margin-left: -4px;
-    }
-`;
+//     @media screen and (min-width: 769px) and (max-width: 950px) {
+//         margin-left: -4px;
+//     }
+// `;
