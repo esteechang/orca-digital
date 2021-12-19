@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2db9ffb.chunk.css",
-    "main.js": "/static/js/main.436353c8.chunk.js",
-    "main.js.map": "/static/js/main.436353c8.chunk.js.map",
+    "main.css": "/static/css/main.cf8146c0.chunk.css",
+    "main.js": "/static/js/main.9c74bb69.chunk.js",
+    "main.js.map": "/static/js/main.9c74bb69.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2bf4cb2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2bf4cb2a.js.map",
-    "static/js/2.6e9d6cbd.chunk.js": "/static/js/2.6e9d6cbd.chunk.js",
-    "static/js/2.6e9d6cbd.chunk.js.map": "/static/js/2.6e9d6cbd.chunk.js.map",
+    "static/js/2.ad3adeab.chunk.js": "/static/js/2.ad3adeab.chunk.js",
+    "static/js/2.ad3adeab.chunk.js.map": "/static/js/2.ad3adeab.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.d2db9ffb.chunk.css.map": "/static/css/main.d2db9ffb.chunk.css.map",
-    "static/js/2.6e9d6cbd.chunk.js.LICENSE.txt": "/static/js/2.6e9d6cbd.chunk.js.LICENSE.txt",
+    "static/css/main.cf8146c0.chunk.css.map": "/static/css/main.cf8146c0.chunk.css.map",
+    "static/js/2.ad3adeab.chunk.js.LICENSE.txt": "/static/js/2.ad3adeab.chunk.js.LICENSE.txt",
     "static/media/F1.54b5051b.png": "/static/media/F1.54b5051b.png",
     "static/media/F2.4c60cc71.png": "/static/media/F2.4c60cc71.png",
     "static/media/F3.e189d38a.png": "/static/media/F3.e189d38a.png",
@@ -27,11 +27,12 @@
     "static/media/Montserrat-Regular.e20d5327.ttf": "/static/media/Montserrat-Regular.e20d5327.ttf",
     "static/media/OS1.7f8b2617.png": "/static/media/OS1.7f8b2617.png",
     "static/media/OS2.b8912bec.png": "/static/media/OS2.b8912bec.png",
-    "static/media/OS3.b7914d95.png": "/static/media/OS3.b7914d95.png",
+    "static/media/Optima.dc3d2a05.TTF": "/static/media/Optima.dc3d2a05.TTF",
     "static/media/Paloseco-Light.594348e2.ttf": "/static/media/Paloseco-Light.594348e2.ttf",
     "static/media/App.css": "/static/media/Paloseco-Medium.690da62f.ttf",
     "static/media/deon-face.0de0b2d3.png": "/static/media/deon-face.0de0b2d3.png",
     "static/media/deon-interest.419bb7b3.png": "/static/media/deon-interest.419bb7b3.png",
+    "static/media/gogo-logo.d50bba28.png": "/static/media/gogo-logo.d50bba28.png",
     "static/media/jh-face.113ccbbd.png": "/static/media/jh-face.113ccbbd.png",
     "static/media/jh-interest.05deb124.png": "/static/media/jh-interest.05deb124.png",
     "static/media/jj-face.4a4acb79.png": "/static/media/jj-face.4a4acb79.png",
@@ -46,8 +47,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2bf4cb2a.js",
-    "static/js/2.6e9d6cbd.chunk.js",
-    "static/css/main.d2db9ffb.chunk.css",
-    "static/js/main.436353c8.chunk.js"
+    "static/js/2.ad3adeab.chunk.js",
+    "static/css/main.cf8146c0.chunk.css",
+    "static/js/main.9c74bb69.chunk.js"
   ]
 }
