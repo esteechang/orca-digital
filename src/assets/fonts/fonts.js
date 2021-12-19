@@ -9,6 +9,8 @@ import LTAmberLight from './LT-Amber-Light.otf';
 import MontserratMedium from './Montserrat-Medium.ttf';
 import MontserratRegular from './Montserrat-Regular.ttf';
 
+import Optima from './Optima.TTF';
+
 export default createGlobalStyle`
     @font-face {
         font-family: 'PalosecoMedium';
@@ -47,6 +49,13 @@ export default createGlobalStyle`
         font-family: 'MontserratRegular';
         src: local('MontserratRegular'),
         url(${MontserratRegular}) format('truetype');
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Optima';
+        src: local('Optima'),
+        url(${Optima}) format('truetype');
         font-style: normal;
     }
 `;
