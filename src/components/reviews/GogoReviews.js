@@ -240,6 +240,14 @@ const GogoReviews = () => {
                         setShowStartScreen(true);
                         setShowModal(true);
                         setShowSubmit(false);
+                        setShowQ1(false);
+                        setShowQ2(false);
+                        setShowQ3(false);
+                        setShowQ4(false);
+                        setShowQ5(false);
+                        setShowQ6(false);
+                        setShowSubmit(false);
+                        setShowErrorModal(false);
                         clearForm();
                     },
                     (error) => {
