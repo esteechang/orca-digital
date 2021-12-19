@@ -525,7 +525,7 @@ const GogoReviews = () => {
                             <ProgressBar bgcolor="#FEB700" completed="100" />
 
                             <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <SubmitButton type="submit" value={'Submit'} />
+                            <SubmitButton type="button" value={'Submit'} />
                         </>
                     ) : null}
                 </Container>
