@@ -14,7 +14,7 @@ import './styles.css';
 
 const MoreServices = () => {
     return (
-        <Container>
+        <Container id="more-services">
             <div>
                 <Column>
                     <Item className="corporate">

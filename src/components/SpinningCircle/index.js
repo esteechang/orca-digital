@@ -27,8 +27,9 @@ const index = () => {
                 <div className="box">
                     <img
                         src={OS3}
-                        alt="ideation icon"
-                        className="icon"
+                        alt="web dev icon"
+                        style={{width: 250}}
+                    
                     />
                 </div>
             </div>
@@ -54,8 +55,8 @@ const index = () => {
                     <div className="box">
                         <img
                             src={OS3}
-                            alt="ideation icon"
-                            className="icon-small"
+                            alt="web dev icon"
+                            className="icon-medium"
                         />
                     </div>
 
@@ -69,7 +70,7 @@ const index = () => {
                 </div>
                 <Fade duration={2000} delay={1500} triggerOnce style={{width: '375px'}}>
                     <div className="third-row">
-                        <p>IDEATION</p>
+                        <p style={{textAlign: 'center'}} >WEB DEVELOPMENT</p>
                         <p>BRANDING</p>
                     </div>
                 </Fade>

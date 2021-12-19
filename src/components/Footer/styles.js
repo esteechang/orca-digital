@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { IoIosArrowUp } from 'react-icons/io';
 
 export const FooterContainer = styled.footer`
     background-color: #000;
@@ -149,4 +150,19 @@ export const OrcaIcon = styled.img`
     margin-right: 0.5rem;
     height: 150px;
     width: 150px;
+`;
+
+export const BackToTopArrow = styled(IoIosArrowUp)`
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    opacity: 0.5;
+    cursor: pointer;
+    @media screen and (max-width: 820px) {
+        display: none;
+    }
 `;

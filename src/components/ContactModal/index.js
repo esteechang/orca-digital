@@ -68,7 +68,7 @@ const ContactModal = ({ showModal, setShowModal }) => {
                                             <FaInstagram />
                                         </SocialIconLink>
                                         <SocialIconLink
-                                            href="https://www.facebook.com/Orca-Digital-100552852435775/"
+                                            href="https://www.facebook.com/orcadigitalsg/"
                                             target="_blank"
                                             aria-label="Facebook"
                                         >
@@ -82,7 +82,7 @@ const ContactModal = ({ showModal, setShowModal }) => {
                                             <FaLinkedin />
                                         </SocialIconLink>
                                         <SocialIconLink
-                                            href="https://linktr.ee/orcadigital48"
+                                            href="https://linktr.ee/orcadigitalsg"
                                             target="_blank"
                                             aria-label="LinkedTree"
                                         >

@@ -38,20 +38,25 @@ export const SubtitleContainer = styled.div`
     flex-direction: row;
     color: white;
     margin-top: 25px;
-    font-size: 25pt;
-
+    
     @media screen and (max-width: 768px) {
         display: none;
     }
 `;
 
 export const Subtitle = styled.p`
+    font-family: 'PalosecoMedium';
+    text-transform: uppercase;
+    font-size: 15pt;
+font-weight: 100;
+    
     :first-child {
-        margin-right: 190px;
+        margin-left: 80px;
+        margin-right: 150px;
     }
 
     :last-child {
-        margin-left: 190px;
+        margin-left: 130px;
     }
 `;
 

@@ -75,7 +75,7 @@ p {
 }
 .third-row p {
     margin-right: 60px;
-    margin-left: 40px;
+    margin-left: 15px;
 }
 
 .icon {
@@ -86,6 +86,10 @@ p {
 .icon-small {
     width: 80px;
     height: 80px;
+}
+
+.icon-medium {
+    width: 150px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -5,7 +5,7 @@ import {
     FaLinkedin,
     FaInstagram,
     FaFacebook,
-    FaTelegramPlane,
+    FaWhatsapp,
 } from 'react-icons/fa';
 
 import {
@@ -24,6 +24,7 @@ import {
     SocialIcons,
     SocialIconLink,
     FooterSocialLinks,
+    BackToTopArrow,
 } from './styles';
 
 import OrcaLogoGold from '../../assets/images/orca-logo-gold.png';
@@ -40,8 +41,9 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle> About Us</FooterLinkTitle>
+                            <FooterLink to="/about-us">Our Founders</FooterLink>
                             <FooterLink to="/">How it works</FooterLink>
-                            <FooterLinkScroll
+                            {/* <FooterLinkScroll
                                 to="testimonials"
                                 smooth={true}
                                 duration={500}
@@ -60,7 +62,7 @@ const Footer = () => {
                                 offset={-80}
                             >
                                 Careers
-                            </FooterLinkScroll>
+                            </FooterLinkScroll> */}
                             <FooterLink to="/">Terms of Service</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
@@ -81,26 +83,26 @@ const Footer = () => {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
-                        <FooterLinkItems>
+                        {/* <FooterLinkItems>
                             <FooterLinkTitle>People</FooterLinkTitle>
                             <FooterLink to="/">Investors</FooterLink>
                             <FooterLink to="/">Ambassadors</FooterLink>
                             <FooterLink to="/">Agency</FooterLink>
                             <FooterLink to="/">Influencers</FooterLink>
-                        </FooterLinkItems>
+                        </FooterLinkItems> */}
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
                             <FooterSocialLinks
-                                href="//www.instagram.com/orcadigitalsg"
+                                href="https://www.instagram.com/orcadigitalsg/"
                                 target="_blank"
                             >
                                 Instagram
                             </FooterSocialLinks>
                             <FooterSocialLinks
-                                href="//t.me/orcadigital"
+                                href="//wa.me/message/V3EIKUVU57TIO1"
                                 target="_blank"
                             >
-                                Telegram
+                                WhatsApp
                             </FooterSocialLinks>
                             <FooterSocialLinks
                                 href="//www.linkedin.com/company/orca-digital-sg/"
@@ -109,7 +111,7 @@ const Footer = () => {
                                 LinkedIn
                             </FooterSocialLinks>
                             <FooterSocialLinks
-                                href="https://www.facebook.com/Orca-Digital-100552852435775/"
+                                href="https://www.facebook.com/orcadigitalsg/"
                                 target="_blank"
                             >
                                 Facebook
@@ -133,18 +135,18 @@ const Footer = () => {
                         </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink
-                                href="//www.instagram.com/orcadigitalsg"
+                                href="https://www.instagram.com/orcadigitalsg/"
                                 target="_blank"
                                 aria-label="Instagram"
                             >
                                 <FaInstagram />
                             </SocialIconLink>
                             <SocialIconLink
-                                href="//t.me/orcadigital"
+                                href="//wa.me/message/V3EIKUVU57TIO1"
                                 target="_blank"
-                                aria-label="Telegram"
+                                aria-label="Whatsapp"
                             >
-                                <FaTelegramPlane />
+                                <FaWhatsapp />
                             </SocialIconLink>
                             <SocialIconLink
                                 href="//www.linkedin.com/company/orca-digital-sg/"
@@ -154,7 +156,7 @@ const Footer = () => {
                                 <FaLinkedin />
                             </SocialIconLink>
                             <SocialIconLink
-                                href="https://www.facebook.com/Orca-Digital-100552852435775/"
+                                href="https://www.facebook.com/orcadigitalsg/"
                                 target="_blank"
                                 aria-label="Facebook"
                             >
@@ -164,6 +166,7 @@ const Footer = () => {
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>
+            <BackToTopArrow onClick={toggleHome} />
         </FooterContainer>
     );
 };
