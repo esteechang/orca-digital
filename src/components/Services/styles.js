@@ -37,7 +37,7 @@ export const SubtitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     color: white;
-    margin-top: 25px;
+    margin-top: 30px;
     
     @media screen and (max-width: 768px) {
         display: none;
@@ -51,12 +51,12 @@ export const Subtitle = styled.p`
 font-weight: 100;
     
     :first-child {
-        margin-left: 80px;
+        margin-left: 50px;
         margin-right: 150px;
     }
 
     :last-child {
-        margin-left: 130px;
+        margin-left: 100px;
     }
 `;
 

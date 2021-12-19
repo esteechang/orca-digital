@@ -106,6 +106,19 @@ const GogoReviews = () => {
         },
     };
 
+    const clearForm = () => {
+        setSelected([]);
+        setQ2Selected([]);
+        setQ1TextArea('');
+        setErrorMsg('');
+        setStarRating(0);
+        setQ4TextArea('');
+        setQ5TextArea('');
+        setQ6YesTextArea('');
+        setQ6NoTextArea('');
+        setNameInputValue('');
+    };
+
     const handleSelected = (name) => {
         if (selected.includes(name)) {
             setSelected((prevSelected) =>
@@ -224,7 +237,10 @@ const GogoReviews = () => {
                 .then(
                     (result) => {
                         console.log(result.text);
+                        setShowStartScreen(true);
                         setShowModal(true);
+                        setShowSubmit(false);
+                        clearForm();
                     },
                     (error) => {
                         console.log(error.text);
@@ -294,11 +310,10 @@ const GogoReviews = () => {
                             <div style={{ marginTop: 80 }}></div>
                             <ProgressBar bgcolor="#FEB700" completed="0" />
                             <QuestionNumber style={{ marginTop: -10 }}>
-                                {' '}
                                 1.
                             </QuestionNumber>
                             <QuestionTitle>
-                                How did you find out about GOGO Properties?
+                                How did you find out about GoGo Properties?
                             </QuestionTitle>
                             {options.map((option) => (
                                 <div
