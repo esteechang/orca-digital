@@ -294,3 +294,24 @@ export const SubmitButton = styled.input`
     margin-top: 20px;
     background-color: transparent;
 `;
+
+export const TNCtext = styled.p`
+    font-family: 'Optima';
+    font-size: 12pt;
+    width: 80%;
+    align-self: center;
+    margin-top: 10px;
+`;
+
+export const termsText = styled.li`
+    font-family: 'Optima';
+    font-size: 10pt;
+`;
+
+export const fullTNCText = styled.p`
+    font-family: 'Optima';
+    font-size: 12pt;
+    width: 80%;
+    color: white;
+    margin-top: 15px;
+`;

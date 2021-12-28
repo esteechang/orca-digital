@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import {
     Container,
@@ -22,6 +22,7 @@ import {
     NameQuestion,
     GetStartedContainer,
     GetStartedText,
+    TNCtext,
 } from './styles';
 
 import {
@@ -39,8 +40,6 @@ import gogoLogo from '../../assets/gogo-properties/gogo-logo.png';
 import ReviewSubmittedModal from './ReviewSubmittedModal';
 
 const GogoReviews = () => {
-    const form = useRef();
-
     const [selected, setSelected] = useState([]);
     const [q2selected, setQ2Selected] = useState([]);
     const [q1TextArea, setQ1TextArea] = useState('');
@@ -64,9 +63,6 @@ const GogoReviews = () => {
 
     const [showModal, setShowModal] = useState(false);
     const [showErrorModal, setShowErrorModal] = useState(false);
-    // const openModal = () => {
-    //     setShowModal((prev) => !prev);
-    // };
 
     useEffect(() => {
         document.title = 'Reviews | GoGoProperties ';
@@ -293,251 +289,279 @@ const GogoReviews = () => {
                 height: '100vh',
             }}
         >
-            <form ref={form} onSubmit={handleSubmit}>
-                <Container>
-                    {showStartScreen ? (
-                        <>
-                            <Logo src={gogoLogo} />
-                            <HorizontalDivider />
-                            <NameQuestion>Fill in your name</NameQuestion>
-                            <NameInput
-                                placeholder={'Your name'}
-                                value={nameInputValue}
-                                onChange={(e) =>
-                                    setNameInputValue(e.target.value)
-                                }
-                            />
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <GetStartedContainer onClick={() => goToQ1()}>
-                                <GetStartedText>Get started</GetStartedText>
-                            </GetStartedContainer>
-                        </>
-                    ) : null}
-                    {showQ1 ? (
-                        <>
-                            <div style={{ marginTop: 80 }}></div>
-                            <ProgressBar bgcolor="#FEB700" completed="0" />
-                            <QuestionNumber style={{ marginTop: -10 }}>
-                                1.
-                            </QuestionNumber>
-                            <QuestionTitle>
-                                How did you find out about GoGo Properties?
-                            </QuestionTitle>
-                            {options.map((option) => (
-                                <div
-                                    onClick={() => handleSelected(option.name)}
+            <Container>
+                {showStartScreen ? (
+                    <>
+                        <Logo src={gogoLogo} />
+                        <HorizontalDivider />
+                        <NameQuestion>Fill in your name</NameQuestion>
+                        <NameInput
+                            placeholder={'Your name'}
+                            value={nameInputValue}
+                            onChange={(e) => setNameInputValue(e.target.value)}
+                        />
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <GetStartedContainer onClick={() => goToQ1()}>
+                            <GetStartedText>Get started</GetStartedText>
+                        </GetStartedContainer>
+                    </>
+                ) : null}
+                {showQ1 ? (
+                    <>
+                        <div style={{ marginTop: 80 }}></div>
+                        <ProgressBar bgcolor="#FEB700" completed="0" />
+                        <QuestionNumber style={{ marginTop: -10 }}>
+                            1.
+                        </QuestionNumber>
+                        <QuestionTitle>
+                            How did you find out about GoGo Properties?
+                        </QuestionTitle>
+                        {options.map((option) => (
+                            <div onClick={() => handleSelected(option.name)}>
+                                {selected.includes(option.name) ? (
+                                    <OptionsSelected>
+                                        {option.name}
+                                    </OptionsSelected>
+                                ) : (
+                                    <Options>{option.name}</Options>
+                                )}
+                            </div>
+                        ))}
+                        <OthersTextAreaSmall
+                            placeholder={'Others'}
+                            value={q1TextArea}
+                            onChange={(e) => setQ1TextArea(e.target.value)}
+                        ></OthersTextAreaSmall>
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <DownArrow
+                            onClick={() => {
+                                goToQ2();
+                            }}
+                        />
+                    </>
+                ) : null}
+
+                {showQ2 ? (
+                    <>
+                        <div style={{ marginTop: 200 }}></div>
+                        <UpArrow
+                            onClick={() => {
+                                goToQ1();
+                            }}
+                        />
+                        <ProgressBar bgcolor="#FEB700" completed="20" />
+                        <QuestionNumber> 2.</QuestionNumber>
+                        <QuestionTitle>
+                            Did you successfully purchase, sell, or rent a
+                            property with GogoProperties?
+                        </QuestionTitle>
+                        {q2options.map((option) => (
+                            <div onClick={() => handleSelectedQ2(option)}>
+                                {q2selected === option ? (
+                                    <OptionsSelected>{option}</OptionsSelected>
+                                ) : (
+                                    <Options>{option}</Options>
+                                )}
+                            </div>
+                        ))}
+
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <DownArrow
+                            onClick={() => {
+                                goToQ3();
+                            }}
+                        />
+                    </>
+                ) : null}
+
+                {showQ3 ? (
+                    <>
+                        <div style={{ marginTop: 200 }}></div>
+                        <UpArrow
+                            onClick={() => {
+                                goToQ2();
+                            }}
+                        />
+                        <ProgressBar bgcolor="#FEB700" completed="40" />
+                        <QuestionNumber> 3. </QuestionNumber>
+                        <QuestionTitle>
+                            How would you rate your experience of
+                            purchasing/renting/selling your property with
+                            GogoProperties' Property Advisor?
+                        </QuestionTitle>
+                        <div
+                            style={{
+                                alignSelf: 'center',
+                                marginLeft: 30,
+                            }}
+                        >
+                            <ReactStars {...starConfiqs} />,
+                        </div>
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <DownArrow
+                            onClick={() => {
+                                goToQ4();
+                            }}
+                        />
+                    </>
+                ) : null}
+
+                {showQ4 ? (
+                    <>
+                        <div style={{ marginTop: 200 }}></div>
+                        <UpArrow
+                            onClick={() => {
+                                goToQ3();
+                            }}
+                        />
+                        <ProgressBar bgcolor="#FEB700" completed="60" />
+                        <QuestionNumber> 4. </QuestionNumber>
+                        <QuestionTitle>
+                            How has GoGoProperties helped you in successfully
+                            finding what you need?
+                        </QuestionTitle>
+                        <OthersTextArea
+                            placeholder={'GoGoProperties has helped me in...'}
+                            value={q4TextArea}
+                            onChange={(e) => setQ4TextArea(e.target.value)}
+                        ></OthersTextArea>
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <DownArrow
+                            onClick={() => {
+                                goToQ5();
+                            }}
+                        />
+                    </>
+                ) : null}
+
+                {showQ5 ? (
+                    <>
+                        <div style={{ marginTop: 200 }}></div>
+                        <UpArrow
+                            onClick={() => {
+                                goToQ4();
+                            }}
+                        />
+                        <ProgressBar bgcolor="#FEB700" completed="75" />
+                        <QuestionNumber> 5. </QuestionNumber>
+                        <QuestionTitle>
+                            Could you describe some areas of service you were
+                            satisfied with?
+                            <Subtext>
+                                E.g. Responsiveness, Clarity, Advice, Knowledge,
+                                etc.
+                            </Subtext>
+                        </QuestionTitle>
+                        <OthersTextArea
+                            placeholder={'I was satisfied with...'}
+                            value={q5TextArea}
+                            onChange={(e) => setQ5TextArea(e.target.value)}
+                        ></OthersTextArea>
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <DownArrow
+                            onClick={() => {
+                                goToQ6();
+                            }}
+                        />
+                    </>
+                ) : null}
+
+                {showQ6 ? (
+                    <>
+                        <div style={{ marginTop: 120 }}></div>
+                        <UpArrow
+                            onClick={() => {
+                                goToQ5();
+                            }}
+                            style={{ top: '70px' }}
+                        />
+                        <ProgressBar bgcolor="#FEB700" completed="90" />
+                        <QuestionNumber style={{ marginTop: -10 }}>
+                            6.
+                        </QuestionNumber>
+                        <QuestionTitle>
+                            Would you recommend GoGoProperties to people who
+                            potentially require Property Advisory services?
+                        </QuestionTitle>
+                        <OthersTextArea
+                            placeholder={'If yes, why?'}
+                            value={q6YesTextArea}
+                            onChange={(e) => setQ6YesTextArea(e.target.value)}
+                            style={{ height: 120 }}
+                        ></OthersTextArea>
+                        <OthersTextArea
+                            placeholder={'If no, why?'}
+                            value={q6NoTextArea}
+                            onChange={(e) => setQ6NoTextArea(e.target.value)}
+                            style={{ height: 120 }}
+                        ></OthersTextArea>
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <DownArrow
+                            onClick={() => {
+                                goToSubmit();
+                            }}
+                        />
+                    </>
+                ) : null}
+
+                {showSubmit ? (
+                    <>
+                        <div style={{ marginTop: 150 }}></div>
+                        <UpArrow
+                            onClick={() => {
+                                goToQ6();
+                            }}
+                        />
+                        <ProgressBar bgcolor="#FEB700" completed="100" />
+                        <ErrorMsg>{errorMsg}</ErrorMsg>
+                        <SubmitButton
+                            type="button"
+                            value={'Submit'}
+                            onClick={(e) => handleSubmit(e)}
+                        />
+                        <TNCtext style={{ marginTop: 60 }}>
+                            By clicking Submit, you:
+                        </TNCtext>
+                        <TNCtext>
+                            <li style={{ fontFamily: 'Optima' }}>
+                                have read and accept the stated{' '}
+                                <a
+                                    href="google.com"
+                                    style={{
+                                        fontFamily: 'Optima',
+                                        color: 'white',
+                                    }}
                                 >
-                                    {selected.includes(option.name) ? (
-                                        <OptionsSelected>
-                                            {option.name}
-                                        </OptionsSelected>
-                                    ) : (
-                                        <Options>{option.name}</Options>
-                                    )}
-                                </div>
-                            ))}
-                            <OthersTextAreaSmall
-                                placeholder={'Others'}
-                                value={q1TextArea}
-                                onChange={(e) => setQ1TextArea(e.target.value)}
-                            ></OthersTextAreaSmall>
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <DownArrow
-                                onClick={() => {
-                                    goToQ2();
-                                }}
-                            />
-                        </>
-                    ) : null}
-
-                    {showQ2 ? (
-                        <>
-                            <div style={{ marginTop: 200 }}></div>
-                            <UpArrow
-                                onClick={() => {
-                                    goToQ1();
-                                }}
-                            />
-                            <ProgressBar bgcolor="#FEB700" completed="20" />
-                            <QuestionNumber> 2.</QuestionNumber>
-                            <QuestionTitle>
-                                Did you successfully purchase, sell, or rent a
-                                property with GogoProperties?
-                            </QuestionTitle>
-                            {q2options.map((option) => (
-                                <div onClick={() => handleSelectedQ2(option)}>
-                                    {q2selected === option ? (
-                                        <OptionsSelected>
-                                            {option}
-                                        </OptionsSelected>
-                                    ) : (
-                                        <Options>{option}</Options>
-                                    )}
-                                </div>
-                            ))}
-
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <DownArrow
-                                onClick={() => {
-                                    goToQ3();
-                                }}
-                            />
-                        </>
-                    ) : null}
-
-                    {showQ3 ? (
-                        <>
-                            <div style={{ marginTop: 200 }}></div>
-                            <UpArrow
-                                onClick={() => {
-                                    goToQ2();
-                                }}
-                            />
-                            <ProgressBar bgcolor="#FEB700" completed="40" />
-                            <QuestionNumber> 3. </QuestionNumber>
-                            <QuestionTitle>
-                                How would you rate your experience of
-                                purchasing/renting/selling your property with
-                                GogoProperties' Property Advisor?
-                            </QuestionTitle>
-                            <div
+                                    Terms and Condition{' '}
+                                </a>{' '}
+                                of this application.
+                            </li>
+                        </TNCtext>
+                        <TNCtext>
+                            <li
                                 style={{
-                                    alignSelf: 'center',
-                                    marginLeft: 30,
+                                    fontFamily: 'Optima',
+                                    lineHeight: 1.5,
                                 }}
                             >
-                                <ReactStars {...starConfiqs} />,
-                            </div>
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <DownArrow
-                                onClick={() => {
-                                    goToQ4();
-                                }}
-                            />
-                        </>
-                    ) : null}
-
-                    {showQ4 ? (
-                        <>
-                            <div style={{ marginTop: 200 }}></div>
-                            <UpArrow
-                                onClick={() => {
-                                    goToQ3();
-                                }}
-                            />
-                            <ProgressBar bgcolor="#FEB700" completed="60" />
-                            <QuestionNumber> 4. </QuestionNumber>
-                            <QuestionTitle>
-                                How has GoGoProperties helped you in
-                                successfully finding what you need?
-                            </QuestionTitle>
-                            <OthersTextArea
-                                placeholder={
-                                    'GoGoProperties has helped me in...'
-                                }
-                                value={q4TextArea}
-                                onChange={(e) => setQ4TextArea(e.target.value)}
-                            ></OthersTextArea>
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <DownArrow
-                                onClick={() => {
-                                    goToQ5();
-                                }}
-                            />
-                        </>
-                    ) : null}
-
-                    {showQ5 ? (
-                        <>
-                            <div style={{ marginTop: 200 }}></div>
-                            <UpArrow
-                                onClick={() => {
-                                    goToQ4();
-                                }}
-                            />
-                            <ProgressBar bgcolor="#FEB700" completed="75" />
-                            <QuestionNumber> 5. </QuestionNumber>
-                            <QuestionTitle>
-                                Could you describe some areas of service you
-                                were satisfied with?
-                                <Subtext>
-                                    E.g. Responsiveness, Clarity, Advice,
-                                    Knowledge, etc.
-                                </Subtext>
-                            </QuestionTitle>
-                            <OthersTextArea
-                                placeholder={'I was satisfied with...'}
-                                value={q5TextArea}
-                                onChange={(e) => setQ5TextArea(e.target.value)}
-                            ></OthersTextArea>
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <DownArrow
-                                onClick={() => {
-                                    goToQ6();
-                                }}
-                            />
-                        </>
-                    ) : null}
-
-                    {showQ6 ? (
-                        <>
-                            <div style={{ marginTop: 120 }}></div>
-                            <UpArrow
-                                onClick={() => {
-                                    goToQ5();
-                                }}
-                                style={{ top: '70px' }}
-                            />
-                            <ProgressBar bgcolor="#FEB700" completed="90" />
-                            <QuestionNumber style={{ marginTop: -10 }}>
-                                6.
-                            </QuestionNumber>
-                            <QuestionTitle>
-                                Would you recommend GoGoProperties to people who
-                                potentially require Property Advisory services?
-                            </QuestionTitle>
-                            <OthersTextArea
-                                placeholder={'If yes, why?'}
-                                value={q6YesTextArea}
-                                onChange={(e) =>
-                                    setQ6YesTextArea(e.target.value)
-                                }
-                                style={{ height: 120 }}
-                            ></OthersTextArea>
-                            <OthersTextArea
-                                placeholder={'If no, why?'}
-                                value={q6NoTextArea}
-                                onChange={(e) =>
-                                    setQ6NoTextArea(e.target.value)
-                                }
-                                style={{ height: 120 }}
-                            ></OthersTextArea>
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <DownArrow
-                                onClick={() => {
-                                    goToSubmit();
-                                }}
-                            />
-                        </>
-                    ) : null}
-
-                    {showSubmit ? (
-                        <>
-                            <div style={{ marginTop: 220 }}></div>
-                            <UpArrow
-                                onClick={() => {
-                                    goToQ6();
-                                }}
-                            />
-
-                            <ProgressBar bgcolor="#FEB700" completed="100" />
-
-                            <ErrorMsg>{errorMsg}</ErrorMsg>
-                            <SubmitButton type="button" value={'Submit'} />
-                        </>
-                    ) : null}
-                </Container>
-            </form>
+                                hereby declare that all information stated in
+                                this form is accurate and Orca Digital holds the
+                                right to utilise this information at its
+                                discretion. Any conflicts created as a result of
+                                inaccurate information will not be deemed
+                                responsible by Orca Digital.
+                            </li>
+                        </TNCtext>
+                        <TNCtext>
+                            <li style={{ fontFamily: 'Optima' }}>
+                                fully understand that Orca Digital reserves the
+                                right to amend these Terms & Conditions at any
+                                time without notice.
+                            </li>
+                        </TNCtext>
+                    </>
+                ) : null}
+            </Container>
         </div>
     );
 };

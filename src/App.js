@@ -10,6 +10,7 @@ import About from './pages/about';
 
 import TagManager from 'react-gtm-module';
 import GogoReviews from './components/reviews/GogoReviews';
+import TnC from './components/reviews/TnC';
 
 const App = () => {
     const tagManagerArgs = {
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/" exact component={Home} />
             <Route path="/about-us" exact component={About} />
             <Route path="/gogoproperties" exact component={GogoReviews} />
+            <Route path="/terms-and-conditions" exact component={TnC} />
         </Router>
     );
 };
